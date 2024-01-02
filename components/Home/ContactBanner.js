@@ -4,7 +4,7 @@ const ContactBanner = () => {
   const socialMediaImg = ["facebook", "twitter", "instagram", "linked"];
 
   return (
-    <div className="contactbanner">
+    <div className="contactbanner pb-10">
       <div className="contactbannerpadre">
         <div className="lemita">
           <p>Inovamos en cada</p>
