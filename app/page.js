@@ -1,19 +1,14 @@
-
-import Banner from "@/components/Home/Banner";
-import ContactBanner from "@/components/Home/ContactBanner";
-import Proyects from "@/components/Home/Proyects/Proyects";
-import AboutUs from "@/components/Home/AboutUs/AboutUs";
-import Banner from "@/components/Home/Banner";
-import ContactBanner from "@/components/Home/ContactBanner";
-import Image from "next/image";
-
+import { NewAbout } from "@/components/Home/AboutUs/NewAbout";
+import NewContactBanner from "@/components/Home/NewContactBanner";
+import NewBanner from "@/components/Home/NewBanner";
+import NewProyects from "@/components/Home/Proyects/NewProyects";
 export default function Home() {
   return (
     <>
-      <Banner />
-      <ContactBanner />
-      <AboutUs />
-      <Proyects />
+      <NewBanner />
+      <NewContactBanner />
+      <NewAbout />
+      <NewProyects />
     </>
   );
 }
