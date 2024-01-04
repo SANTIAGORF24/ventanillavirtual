@@ -22,84 +22,9 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-.padrehader {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-.navBar {
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  width: 1500px;
-}
-
-.enlacesnavbar {
-  width: 600px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-}
-
-.botoncirc {
-  border-radius: 4px;
-  font-size: 16px;
-  width: 130px;
-  height: 40px;
-  background-color: #485098;
-  color: #fff;
-  font-weight: bold;
-  border-color: #485098;
-}
-.logito {
-  width: 70px;
-}
-
-.inicio {
-  color: #485098;
-}
 
 .gif {
   width: 750px;
-}
-
-.padretextobaner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1650px;
-  padding: 50px;
-}
-
-.baner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cibertech {
-  font-size: 100px;
-}
-.lema {
-  padding-bottom: 70px;
-}
-
-.contactbanner {
-  display: flex;
-  justify-content: center;
-}
-
-.contactbannerpadre {
-  width: 1600px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.socialmedia {
-  display: flex;
-  justify-content: space-between;
-  width: 600px;
 }
 
 .phone {
@@ -118,28 +43,63 @@
   padding: 5px;
 }
 
-#app { height: 100% }
-html,
-body {
-  position: relative;
-  height: 100%;
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  width: 240px;
+  height: 320px;
 }
 
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
+.swiper-slide:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
 }
