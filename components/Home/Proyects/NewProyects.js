@@ -133,7 +133,7 @@ const NewProyects = () => {
               </Card>
             </Tab>
           </Tabs>
-        </div>{" "}
+        </div>
       </div>
     </div>
   );
