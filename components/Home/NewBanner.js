@@ -7,16 +7,18 @@ const NewBanner = () => {
       <div className="flex items-center justify-between w-4/5">
         <div>
           <div>
-            <h1 className="text-8xl font-extrabold">CIBERTECH</h1>
+            <h1 className="Newbanner text-8xl font-extrabold ">CIBERTECH</h1>
             <h3 className="text-xl">
               Programamos soluciones, creamos experiencias.
             </h3>
           </div>
           <div className="pt-7">
-            <Button color="primary">Load more</Button>
+            <Button className="buton" color="primary">
+              Load more
+            </Button>
           </div>
         </div>
-        <div>
+        <div className="Gif">
           <Image
             isZoomed
             width={750}
