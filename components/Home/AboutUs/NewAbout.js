@@ -43,7 +43,7 @@ export function NewAbout() {
               <Divider />
               <CardBody>
                 <p>
-                  En Cibertech, nos apasiona la creación y el desarrollo de
+                  En Sibartech, nos apasiona la creación y el desarrollo de
                   soluciones innovadoras a través de la programación. Somos una
                   empresa líder en el campo de la tecnología, especializada en
                   el diseño, desarrollo y mantenimiento de proyectos a medida.
@@ -68,7 +68,7 @@ export function NewAbout() {
               >
                 <p>
                   Desde el corazón de la programación, creamos soluciones que
-                  impulsan el progreso. En Cibertech, no solo construimos líneas
+                  impulsan el progreso. En Sibartech, no solo construimos líneas
                   de código, construimos puentes digitales entre conceptos y
                   ejecución. Nos especializamos en el desarrollo de proyectos a
                   medida que abarcan desde aplicaciones web y móviles hasta
@@ -82,7 +82,7 @@ export function NewAbout() {
                 title="Comprometidos con tu Éxito"
               >
                 <p>
-                  En Cibertech, entendemos que el desarrollo de software no
+                  En Sibartech, entendemos que el desarrollo de software no
                   termina con la entrega del proyecto. Nos comprometemos a
                   brindar un soporte excepcional que garantice el rendimiento
                   continuo y la adaptabilidad de nuestras soluciones. Nuestro
@@ -98,7 +98,7 @@ export function NewAbout() {
               >
                 <p>
                   En el mundo dinámico de la tecnología, la innovación es clave.
-                  En Cibertech, abrazamos la filosofía de la mejora continua.
+                  En Sibartech, abrazamos la filosofía de la mejora continua.
                   Mantenemos nuestros conocimientos actualizados con las últimas
                   tendencias y tecnologías para ofrecerte soluciones
                   vanguardistas que te posicionen a la vanguardia de tu

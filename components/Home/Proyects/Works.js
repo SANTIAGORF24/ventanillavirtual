@@ -38,12 +38,12 @@ const Works = () => {
             </CardHeader>
             <CardBody className="px-3 py-0 text-base text-default-400">
               <p>
-                En Cibertech, especializamos en la recuperación de archivos y
+                En Sibartech, especializamos en la recuperación de archivos y
                 fotos eliminadas de discos duros, USB y más. Devolvemos tus
                 datos con precisión y confiabilidad.
               </p>
               <span className="pt-2">
-                #Cibertech
+                #Sibartech
                 <span className="py-2" aria-label="computer" role="img">
                   💻
                 </span>
@@ -87,12 +87,12 @@ const Works = () => {
             </CardHeader>
             <CardBody className="px-3 py-0 text-base text-default-400">
               <p>
-                En Cibertech, protegemos tu empresa ajustando permisos,
+                En Sibartech, protegemos tu empresa ajustando permisos,
                 asegurando hardware y optimizando software. Mantenimiento
                 completo para un entorno informático seguro y eficiente.
               </p>
               <span className="pt-2">
-                #Cibertech
+                #Sibartech
                 <span className="py-2" aria-label="computer" role="img">
                   💻
                 </span>

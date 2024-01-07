@@ -7,7 +7,7 @@ const NewBanner = () => {
       <div className="flex items-center justify-between w-4/5">
         <div>
           <div>
-            <h1 className="Newbanner text-8xl font-extrabold ">CIBERTECH</h1>
+            <h1 className="Newbanner text-8xl font-extrabold ">SIBARTECH</h1>
             <h3 className="text-xl">
               Programamos soluciones, creamos experiencias.
             </h3>

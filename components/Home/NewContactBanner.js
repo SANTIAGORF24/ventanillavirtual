@@ -31,7 +31,7 @@ const NewContactBanner = () => {
               <div className="space-y-2 flex items-center">
                 <img className="phoneimg" src={"assets/img/mail.png"}></img>
                 <p className="text-small text-default-400 px-3">
-                  cibertech@cibertech.com
+                  sibartech@sibartech.com
                 </p>
               </div>
             </div>
