@@ -25,7 +25,7 @@ const Footer = () => {
             />
           </div>
 
-          <p className="font-bold text-white text-xl">CIBERTECH</p>
+          <p className="font-bold text-white text-xl">SIBARTEHC</p>
         </div>
         <div className="flex gap-4">
           {sections.map((tx, i) => (
@@ -37,14 +37,14 @@ const Footer = () => {
         <div>
           <p className="text-white">
             Cotnactanos a:{" "}
-            <a className="font-bold" href="mailto:cibertech@cibertech.com">
-              cibertech@cibertech.com
+            <a className="font-bold" href="mailto:sibartec@sibartech.com">
+              sibartec@sibartech.com
             </a>
           </p>
         </div>
         <div>
           <p className="text-white">
-            ©2024 Todos los derechos reservados. Cibertech.
+            ©2024 Todos los derechos reservados. Sibartech.
           </p>
         </div>
       </div>
