@@ -25,7 +25,7 @@ const Footer = () => {
             />
           </div>
 
-          <p className="font-bold text-white text-xl">SIBARTEHC</p>
+          <p className="font-bold text-white text-xl">SIBARTECH</p>
         </div>
         <div className="flex gap-4">
           {sections.map((tx, i) => (
