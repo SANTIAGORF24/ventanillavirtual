@@ -19,9 +19,9 @@ import "../../../app/globals.css";
 
 export function NewAbout() {
   return (
-    <div className="px-2 -my-12 sm:flex items-center justify-center max-w-full">
-      <div className="w-4/5 max-sm:w-3/4">
-        <h2 className="text-3xl font-bold py-10 max-sm:text-2xl"> Acerca de</h2>
+    <div className="px-3 -my-12 sm:flex items-center justify-center max-w-full">
+      <div className="w-4/5 max-sm:w-full">
+        <h2 className="text-3xl font-bold py-10"> Acerca de</h2>
         <div className="-my-8 sm:flex items-center py-8">
           <div className="full-w">
             <Card className="max-w-[400px]">
@@ -107,7 +107,7 @@ export function NewAbout() {
               </AccordionItem>
             </Accordion>
           </div>
-          <div className="w-1/4 max-sm:px-5">
+          <div className="w-1/4 max-sm:px-20">
             <Swiper
               effect={"cards"}
               grabCursor={true}

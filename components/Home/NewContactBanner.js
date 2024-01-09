@@ -11,14 +11,14 @@ import {
 
 const NewContactBanner = () => {
   return (
-    <div className="px-2 sm:flex items-center justify-center max-w-full pb-10">
+    <div className="px-3 sm:flex items-center justify-center max-w-full pb-10">
       <div className="sm:flex items-center justify-between w-4/5">
         <div>
           <p>Inovamos en cada</p>
           <h4 className="font-bold text-xl">Línea de código</h4>
           <p>Soportamos en cada desafio</p>
         </div>
-        <div className="py-5 sm:flex justify-between items-center w-3/6">
+        <div className="py-3 sm:flex justify-between items-center sm:w-3/6">
           <div>
             <div className="max-w-md">
               <div className="space-y-1 flex items-center">
@@ -45,7 +45,7 @@ const NewContactBanner = () => {
                 </p>
               </div>
               <Divider className="my-4" />
-              <div className="flex h-5 items-center space-x-4 text-small">
+              <div className="flex h-5 items-center space-x-4 text-small max-sm:space-x-9">
                 <div>
                   <img
                     className="phoneimg"

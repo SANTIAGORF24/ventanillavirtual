@@ -14,14 +14,14 @@ const Team = () => {
   // import required modules
 
   return (
-    <div className="flex items-center justify-center max-w-full">
-      <div className="w-4/5 ">
+    <div className="px-3 sm:flex items-center justify-center max-w-full">
+      <div className="w-full sm:w-4/5 ">
         <h2 className="text-3xl font-bold py-10"> Team</h2>
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 2500,
+            delay: 1000000000,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -34,14 +34,14 @@ const Team = () => {
           <SwiperSlide className="text-center text-base bg-white flex justify-center items-center">
             <div>
               <Card className="p-5 flex items-center justify-center ">
-                <div className="flex items-center max-w-8xl">
+                <div className="sm:flex items-center max-w-8xl">
                   <div className="flex justify-center">
                     <img
                       className="w-2/4 rounded-md"
                       src="./assets/img/portada.jpg"
                     />
                   </div>
-                  <div className="flex-colum">
+                  <div className="flex-colum max-sm:py-3">
                     <div>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -52,13 +52,13 @@ const Team = () => {
                         Vestibulum lacinia arcu eget nulla.
                       </p>
                     </div>
-                    <div className="flex justify-between items-center p-10">
+                    <div className="sm:flex justify-between items-center p-10">
                       <div>
                         <h3 className="font-bold">CEO Inspirador</h3>
                         <p>Santiago Ramírez Forero</p>
                       </div>
                       <div>
-                        <div className="max-w-md">
+                        <div className="max-w-md max-sm:py-3">
                           <div className="space-y-1">
                             <h4 className="text-medium font-medium">
                               Social Media
@@ -68,7 +68,7 @@ const Team = () => {
                             </p>
                           </div>
                           <Divider className="my-4" />
-                          <div className="flex h-5 items-center space-x-4 text-small">
+                          <div className="flex h-5 items-center space-x-8 text-small">
                             <div>
                               <img
                                 className="phoneimg"
@@ -108,14 +108,14 @@ const Team = () => {
           <SwiperSlide className="text-center text-base bg-white flex justify-center items-center">
             <div>
               <Card className="p-5 flex items-center justify-center ">
-                <div className="flex items-center max-w-8xl">
+                <div className="sm:flex items-center max-w-8xl">
                   <div className="flex justify-center items-center">
                     <img
                       className="w-full rounded-md"
                       src="https://robohash.org/mac"
                     />
                   </div>
-                  <div className="flex-colum">
+                  <div className="flex-colum max-sm:py-3">
                     <div>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -126,13 +126,13 @@ const Team = () => {
                         Vestibulum lacinia arcu eget nulla.
                       </p>
                     </div>
-                    <div className="flex justify-between items-center p-10">
+                    <div className="sm:flex justify-between items-center p-10">
                       <div>
                         <h3 className="font-bold">CEO Transformador</h3>
                         <p>Macjainer Molano Ramos</p>
                       </div>
                       <div>
-                        <div className="max-w-md">
+                        <div className="max-w-md max-sm:py-3">
                           <div className="space-y-1">
                             <h4 className="text-medium font-medium">
                               Social Media
@@ -142,7 +142,7 @@ const Team = () => {
                             </p>
                           </div>
                           <Divider className="my-4" />
-                          <div className="flex h-5 items-center space-x-4 text-small">
+                          <div className="flex h-5 items-center space-x-8 text-small">
                             <div>
                               <img
                                 className="phoneimg"
@@ -182,14 +182,14 @@ const Team = () => {
           <SwiperSlide className="text-center text-base bg-white flex justify-center items-center">
             <div>
               <Card className="p-5 flex items-center justify-center ">
-                <div className="flex items-center max-w-8xl">
+                <div className="sm:flex items-center max-w-8xl">
                   <div className="flex justify-center items-center">
                     <img
                       className="w-full rounded-md"
                       src="https://robohash.org/sora"
                     />
                   </div>
-                  <div className="flex-colum">
+                  <div className="flex-colum max-sm:py-3">
                     <div>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -200,13 +200,13 @@ const Team = () => {
                         Vestibulum lacinia arcu eget nulla.
                       </p>
                     </div>
-                    <div className="flex justify-between items-center p-10">
+                    <div className="sm:flex justify-between items-center p-10">
                       <div>
                         <h3 className="font-bold">CEO Innovador</h3>
                         <p>Sebastian Sora Pinto</p>
                       </div>
                       <div>
-                        <div className="max-w-md">
+                        <div className="max-w-md max-sm:py-3">
                           <div className="space-y-1">
                             <h4 className="text-medium font-medium">
                               Social Media
@@ -216,7 +216,7 @@ const Team = () => {
                             </p>
                           </div>
                           <Divider className="my-4" />
-                          <div className="flex h-5 items-center space-x-4 text-small">
+                          <div className="flex h-5 items-center space-x-8 text-small">
                             <div>
                               <img
                                 className="phoneimg"
@@ -256,14 +256,14 @@ const Team = () => {
           <SwiperSlide className="text-center text-base bg-white flex justify-center items-center">
             <div>
               <Card className="p-5 flex items-center justify-center ">
-                <div className="flex items-center max-w-8xl">
+                <div className="sm:flex items-center max-w-8xl">
                   <div className="flex justify-center items-center">
                     <img
                       className="w-full rounded-md"
                       src="https://robohash.org/charles"
                     />
                   </div>
-                  <div className="flex-colum">
+                  <div className="flex-colum max-sm:py-3">
                     <div>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -274,13 +274,13 @@ const Team = () => {
                         Vestibulum lacinia arcu eget nulla.
                       </p>
                     </div>
-                    <div className="flex justify-between items-center p-10">
+                    <div className="sm:flex justify-between items-center p-10">
                       <div>
                         <h3 className="font-bold">CEO Colaborativo</h3>
                         <p>Carlos Enrrique Vargas</p>
                       </div>
                       <div>
-                        <div className="max-w-md">
+                        <div className="max-w-md max-sm:py-3">
                           <div className="space-y-1">
                             <h4 className="text-medium font-medium">
                               Social Media
@@ -290,7 +290,7 @@ const Team = () => {
                             </p>
                           </div>
                           <Divider className="my-4" />
-                          <div className="flex h-5 items-center space-x-4 text-small">
+                          <div className="flex h-5 items-center space-x-8 text-small">
                             <div>
                               <img
                                 className="phoneimg"

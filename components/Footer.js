@@ -12,8 +12,8 @@ const Footer = () => {
   ];
 
   return (
-    <div className="w-full h-full bg-[#005BC4] flex sm:justify-center py-6">
-      <div className="w-4/5 flex flex-col items-center gap-6">
+    <div className="w-full h-full bg-[#005BC4] flex sm:justify-center py-6 max-sm:px-12">
+      <div className="w-4/5 flex flex-col items-center gap-6 max-sm:w-full">
         <div className="w-full flex gap-4 justify-center items-center">
           <div className="w-[100px]">
             <Image
@@ -43,7 +43,7 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <p className="text-white max-sm:px-8">
+          <p className="text-white max-sm:px-5">
             ©2024 Todos los derechos reservados. Sibartech.
           </p>
         </div>
