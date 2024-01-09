@@ -12,7 +12,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="w-full h-full bg-[#005BC4] flex justify-center py-6">
+    <div className="w-full h-full bg-[#005BC4] flex sm:justify-center py-6">
       <div className="w-4/5 flex flex-col items-center gap-6">
         <div className="w-full flex gap-4 justify-center items-center">
           <div className="w-[100px]">
@@ -27,7 +27,7 @@ const Footer = () => {
 
           <p className="font-bold text-white text-xl">SIBARTECH</p>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 max-sm:w-full max-sm:grid max-sm:grid-cols-2 max-sm:gap-y-8 max-sm:gap-x-20 max-sm:px-10">
           {sections.map((tx, i) => (
             <a className="font-bold text-white" href="#" key={i}>
               {tx}
@@ -36,14 +36,14 @@ const Footer = () => {
         </div>
         <div>
           <p className="text-white">
-            Cotnactanos a:{" "}
+            Cotactanos a:{" "}
             <a className="font-bold" href="mailto:sibartec@sibartech.com">
               sibartech@sibartech.com
             </a>
           </p>
         </div>
         <div>
-          <p className="text-white">
+          <p className="text-white max-sm:px-8">
             ©2024 Todos los derechos reservados. Sibartech.
           </p>
         </div>

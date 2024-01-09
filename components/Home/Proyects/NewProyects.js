@@ -4,8 +4,8 @@ import { Tabs, Tab, Card, CardBody, Button, Image } from "@nextui-org/react";
 
 const NewProyects = () => {
   return (
-    <div className="flex items-center justify-center max-w-full pb-10">
-      <div className="flex flex-col justify-between w-4/5">
+    <div className="px-2 my-2 sm:flex items-center justify-center max-w-full pb-10 sm:my-10 sm:-mx-10">
+      <div className="flex flex-col justify-between w-3/4">
         <h2 className="text-3xl font-bold py-10"> Proyectos</h2>
         <div className="flex w-full flex-col">
           <Tabs color="primary" aria-label="Options">

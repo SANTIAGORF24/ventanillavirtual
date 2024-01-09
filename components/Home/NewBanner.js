@@ -3,12 +3,12 @@ import { Button, Image } from "@nextui-org/react";
 
 const NewBanner = () => {
   return (
-    <div className="flex items-center justify-center max-w-full py-10">
-      <div className="flex items-center justify-between w-4/5">
+    <div className="px-2 sm:flex items-center justify-center max-w-full py-10">
+      <div className="sm:flex items-center justify-between w-4/5">
         <div>
           <div>
-            <h1 className="Newbanner text-8xl font-extrabold ">SIBARTECH</h1>
-            <h3 className="text-xl">
+            <h1 className="Newbanner text-5xl font-extrabold sm:text-8xl ">SIBARTECH</h1>
+            <h3 className="text-sm sm:text-xl">
               Programamos soluciones, creamos experiencias.
             </h3>
           </div>
@@ -18,7 +18,7 @@ const NewBanner = () => {
             </Button>
           </div>
         </div>
-        <div className="Gif">
+        <div className="Gif py-3">
           <Image
             isZoomed
             width={750}

@@ -61,7 +61,7 @@ export function NewNav() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem>
+        <NavbarItem className="max-sm:px-20">
           <Button as={Link} color="primary" href="#" variant="flat">
             Contactanos
           </Button>

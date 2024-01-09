@@ -11,14 +11,14 @@ import {
 
 const NewContactBanner = () => {
   return (
-    <div className="flex items-center justify-center max-w-full pb-10">
-      <div className="flex items-center justify-between w-4/5">
+    <div className="px-2 sm:flex items-center justify-center max-w-full pb-10">
+      <div className="sm:flex items-center justify-between w-4/5">
         <div>
           <p>Inovamos en cada</p>
           <h4 className="font-bold text-xl">Línea de código</h4>
           <p>Soportamos en cada desafio</p>
         </div>
-        <div className="flex justify-between items-center w-3/6">
+        <div className="py-5 sm:flex justify-between items-center w-3/6">
           <div>
             <div className="max-w-md">
               <div className="space-y-1 flex items-center">
@@ -37,10 +37,10 @@ const NewContactBanner = () => {
             </div>
           </div>
           <div>
-            <div className="max-w-md">
+            <div className="max-w-md max-sm:py-5">
               <div className="space-y-1">
-                <h4 className="text-medium font-medium">Social Media</h4>
-                <p className="text-small text-default-400">
+                <h4 className="text-lg font-medium">Social Media</h4>
+                <p className="text-sm text-default-400">
                   No dudes en segirnos en nuestras redes
                 </p>
               </div>
