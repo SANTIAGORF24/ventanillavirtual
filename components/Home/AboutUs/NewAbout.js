@@ -112,17 +112,35 @@ export function NewAbout() {
               effect={"cards"}
               grabCursor={true}
               modules={[EffectCards]}
-              className="mySwiper"
+              className="w-60 h-80"
             >
-              <SwiperSlide>Slide 1</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
-              <SwiperSlide>Slide 4</SwiperSlide>
-              <SwiperSlide>Slide 5</SwiperSlide>
-              <SwiperSlide>Slide 6</SwiperSlide>
-              <SwiperSlide>Slide 7</SwiperSlide>
-              <SwiperSlide>Slide 8</SwiperSlide>
-              <SwiperSlide>Slide 9</SwiperSlide>
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-rose-600">
+                Slide 1
+              </SwiperSlide>
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-fuchsia-950">
+                Slide 2
+              </SwiperSlide>
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-purple-700">
+                Slide 3
+              </SwiperSlide>
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-violet-600">
+                Slide 4
+              </SwiperSlide>
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-cyan-400">
+                Slide 5
+              </SwiperSlide>
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-teal-900">
+                Slide 6
+              </SwiperSlide>
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-green-600">
+                Slide 7
+              </SwiperSlide>
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-yellow-300">
+                Slide 8
+              </SwiperSlide>
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-amber-300">
+                Slide 9
+              </SwiperSlide>
             </Swiper>
           </div>
         </div>
