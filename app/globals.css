@@ -22,84 +22,9 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-.padrehader {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-.navBar {
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  width: 1500px;
-}
-
-.enlacesnavbar {
-  width: 600px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-}
-
-.botoncirc {
-  border-radius: 4px;
-  font-size: 16px;
-  width: 130px;
-  height: 40px;
-  background-color: #485098;
-  color: #fff;
-  font-weight: bold;
-  border-color: #485098;
-}
-.logito {
-  width: 70px;
-}
-
-.inicio {
-  color: #485098;
-}
 
 .gif {
   width: 750px;
-}
-
-.padretextobaner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1650px;
-  padding: 50px;
-}
-
-.baner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cibertech {
-  font-size: 100px;
-}
-.lema {
-  padding-bottom: 70px;
-}
-
-.contactbanner {
-  display: flex;
-  justify-content: center;
-}
-
-.contactbannerpadre {
-  width: 1600px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.socialmedia {
-  display: flex;
-  justify-content: space-between;
-  width: 600px;
 }
 
 .phone {
@@ -116,4 +41,121 @@
 .mediaimg {
   display: flex;
   padding: 5px;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.Newbanner {
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.Gif {
+  animation: derecha 2s ease 0s 1 normal forwards;
+}
+
+@keyframes derecha {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateX(48px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateX(26px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateX(13px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateX(6.5px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateX(4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    animation-timing-function: ease-out;
+    transform: translateX(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.buton {
+  animation: buton 2s ease 0s 1 normal forwards;
+}
+
+@keyframes buton {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
 }
