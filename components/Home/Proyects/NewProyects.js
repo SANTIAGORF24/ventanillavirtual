@@ -4,14 +4,22 @@ import { Tabs, Tab, Card, CardBody, Button, Image } from "@nextui-org/react";
 
 const NewProyects = () => {
   return (
-    <div className="flex items-center justify-center max-w-full pb-10">
-      <div className="flex flex-col justify-between w-4/5">
+    <div className="px-3 my-2 sm:flex items-center justify-center max-w-full pb-10 sm:my-10 sm:-mx-10">
+      <div className="flex flex-col justify-between sm:w-3/4">
         <h2 className="text-3xl font-bold py-10"> Proyectos</h2>
         <div className="flex w-full flex-col">
           <Tabs color="primary" aria-label="Options">
             <Tab key="TimeGear" title="TimeGear">
               <Card className="p-5">
-                <div className="flex justify-center ">
+                <div className="flex justify-center max-sm:flex-wrap">
+                <div>
+                    <Image
+                      isZoomed
+                      width={600}
+                      alt="NextUI Fruit Image with Zoom"
+                      src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
+                    />
+                  </div>
                   <div className="flex flex-col justify-between">
                     <div>
                       <CardBody>
@@ -45,7 +53,13 @@ const NewProyects = () => {
                       </Button>
                     </div>
                   </div>
-                  <div>
+                </div>
+              </Card>
+            </Tab>
+            <Tab key="DocuPro" title="DocuPro">
+              <Card className="p-5">
+                <div className="flex justify-center max-sm:flex-wrap">
+                <div>
                     <Image
                       isZoomed
                       width={600}
@@ -53,12 +67,6 @@ const NewProyects = () => {
                       src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
                     />
                   </div>
-                </div>
-              </Card>
-            </Tab>
-            <Tab key="DocuPro" title="DocuPro">
-              <Card className="p-5">
-                <div className="flex justify-center ">
                   <div className="flex flex-col justify-between">
                     <div>
                       <CardBody>
@@ -82,7 +90,13 @@ const NewProyects = () => {
                       </Button>
                     </div>
                   </div>
-                  <div>
+                </div>
+              </Card>
+            </Tab>
+            <Tab key="WebSite" title="WebSite">
+              <Card className="p-5">
+                <div className="flex justify-center max-sm:flex-wrap">
+                <div>
                     <Image
                       isZoomed
                       width={600}
@@ -90,12 +104,6 @@ const NewProyects = () => {
                       src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
                     />
                   </div>
-                </div>
-              </Card>
-            </Tab>
-            <Tab key="WebSite" title="WebSite">
-              <Card className="p-5">
-                <div className="flex justify-center ">
                   <div className="flex flex-col justify-between">
                     <div>
                       <CardBody>
@@ -120,14 +128,6 @@ const NewProyects = () => {
                         Obtener
                       </Button>
                     </div>
-                  </div>
-                  <div>
-                    <Image
-                      isZoomed
-                      width={600}
-                      alt="NextUI Fruit Image with Zoom"
-                      src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
-                    />
                   </div>
                 </div>
               </Card>

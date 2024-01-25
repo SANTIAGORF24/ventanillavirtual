@@ -11,8 +11,8 @@ import {
 
 const Works = () => {
   return (
-    <div className="flex items-center justify-center max-w-full py-10">
-      <div className="flex items-center justify-between space-x-5 w-4/5">
+    <div className="px-3 -my-10 sm:flex items-center justify-center max-w-full py-10">
+      <div className="w-full sm:flex items-center justify-between space-x-5 sm:w-4/5">
         <div>
           <Card className="max-w-2/5">
             <CardHeader className="justify-between">
@@ -63,7 +63,7 @@ const Works = () => {
         </div>
 
         <div>
-          <Card className="max-w-2/5">
+          <Card className="max-w-2/5 max-sm:my-5 -mx-4">
             <CardHeader className="justify-between">
               <div className="flex gap-5">
                 <Avatar
