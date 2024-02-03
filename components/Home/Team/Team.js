@@ -37,8 +37,8 @@ const Team = () => {
                 <div className="sm:flex items-center max-w-8xl">
                   <div className="flex justify-center">
                     <img
-                      className="max-sm:w-3/4 rounded-md max-w-[200px]"
-                      src="./assets/img/portada.jpg"
+                      className="max-sm:w-3/4 rounded-md"
+                      src="./assets/img/ramirez.jpeg"
                     />
                   </div>
                   <div className="flex-colum max-sm:py-3">
