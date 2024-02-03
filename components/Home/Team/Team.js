@@ -31,7 +31,7 @@ const Team = () => {
           modules={[Autoplay, Pagination, Navigation]}
           className="w-full h-full"
         >
-          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center">
+          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center px-12">
             <div>
               <Card className="p-5 flex items-center justify-center ">
                 <div className="sm:flex items-center max-w-8xl">
@@ -111,13 +111,13 @@ const Team = () => {
               </Card>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center">
+          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center px-12">
             <div>
               <Card className="p-5 flex items-center justify-center ">
                 <div className="sm:flex items-center max-w-8xl">
                   <div className="flex justify-center items-center">
                     <img
-                      className="max-sm:w-3/4 rounded-md"
+                      className="max-sm:w-3/4 rounded-md max-w-[200px]"
                       src="assets/img/Foto_Mac.jpeg"
                     />
                   </div>
@@ -189,13 +189,13 @@ const Team = () => {
               </Card>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center">
+          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center px-12">
             <div>
               <Card className="p-5 flex items-center justify-center ">
                 <div className="sm:flex items-center max-w-8xl">
                   <div className="flex justify-center items-center">
                     <img
-                      className="max-sm:w-3/4 rounded-md"
+                      className="max-sm:w-3/4 rounded-md max-w-[200px]"
                       src="assets/img/Foto_Sebastian.jfif"
                     />
                   </div>
@@ -266,13 +266,13 @@ const Team = () => {
               </Card>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center">
+          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center px-12">
             <div>
               <Card className="p-5 flex items-center justify-center ">
                 <div className="sm:flex items-center max-w-8xl">
                   <div className="flex justify-center items-center">
                     <img
-                      className="max-sm:w-3/4 rounded-md"
+                      className="max-sm:w-3/4 rounded-md max-w-[200px]"
                       src="assets/img/Foto_Charles.jfif"
                     />
                   </div>
