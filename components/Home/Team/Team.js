@@ -31,7 +31,7 @@ const Team = () => {
           modules={[Autoplay, Pagination, Navigation]}
           className="w-full h-full"
         >
-          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center">
+          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center px-12">
             <div>
               <Card className="p-5 flex items-center justify-center ">
                 <div className="sm:flex items-center max-w-8xl">
@@ -111,7 +111,7 @@ const Team = () => {
               </Card>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center">
+          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center px-12">
             <div>
               <Card className="p-5 flex items-center justify-center ">
                 <div className="sm:flex items-center max-w-8xl">
@@ -189,7 +189,7 @@ const Team = () => {
               </Card>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center">
+          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center px-12">
             <div>
               <Card className="p-5 flex items-center justify-center ">
                 <div className="sm:flex items-center max-w-8xl">
@@ -267,7 +267,7 @@ const Team = () => {
               </Card>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center">
+          <SwiperSlide className="text-center text-base bg-white flex justify-center items-center px-12">
             <div>
               <Card className="p-5 flex items-center justify-center ">
                 <div className="sm:flex items-center max-w-8xl">
