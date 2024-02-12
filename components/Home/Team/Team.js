@@ -37,8 +37,8 @@ const Team = () => {
                 <div className="sm:flex items-center max-w-8xl">
                   <div className="flex justify-center">
                     <img
-                      className="max-sm:w-3/4 rounded-md"
-                      src="./assets/img/ramirez.jpeg"
+                      className="max-w-64 rounded-md"
+                      src="./assets/img/ramirez.jpg"
                     />
                   </div>
                   <div className="flex-colum max-sm:py-3">
@@ -117,8 +117,8 @@ const Team = () => {
                 <div className="sm:flex items-center max-w-8xl">
                   <div className="flex justify-center items-center">
                     <img
-                      className="max-sm:w-3/4 rounded-md max-w-[200px]"
-                      src="assets/img/Foto_Mac.jpeg"
+                      className="max-w-64 rounded-md"
+                      src="assets/img/mac.jpg"
                     />
                   </div>
                   <div className="flex-colum max-sm:py-3">
@@ -193,10 +193,11 @@ const Team = () => {
             <div>
               <Card className="p-5 flex items-center justify-center ">
                 <div className="sm:flex items-center max-w-8xl">
+                  g
                   <div className="flex justify-center items-center">
                     <img
-                      className="max-sm:w-3/4 rounded-md max-w-[200px]"
-                      src="assets/img/Foto_Sebastian.jfif"
+                      className="max-w-64 rounded-md"
+                      src="assets/img/Foto_Sebastian.jpg"
                     />
                   </div>
                   <div className="flex-colum max-sm:py-3">
@@ -272,8 +273,8 @@ const Team = () => {
                 <div className="sm:flex items-center max-w-8xl">
                   <div className="flex justify-center items-center">
                     <img
-                      className="max-sm:w-3/4 rounded-md max-w-[200px]"
-                      src="assets/img/Foto_Charles.jfif"
+                      className="max-w-64 rounded-md"
+                      src="assets/img/Foto_Charles.jpg"
                     />
                   </div>
                   <div className="flex-colum max-sm:py-3">
