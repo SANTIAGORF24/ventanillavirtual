@@ -12,12 +12,13 @@ const NewProyects = () => {
             <Tab key="TimeGear" title="TimeGear">
               <Card className="p-5">
                 <div className="flex justify-center max-sm:flex-wrap">
-                <div>
+                  <div>
                     <Image
+                      className="max-w-60
+                    "
                       isZoomed
-                      width={600}
                       alt="NextUI Fruit Image with Zoom"
-                      src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
+                      src="assets/img/input.jpeg"
                     />
                   </div>
                   <div className="flex flex-col justify-between">
@@ -47,8 +48,8 @@ const NewProyects = () => {
                         </ul>
                       </CardBody>
                     </div>
-                    <div>
-                      <Button className="w-10 " color="primary" variant="ghost">
+                    <div className=" px-10">
+                      <Button color="primary" variant="ghost">
                         Obtener
                       </Button>
                     </div>
@@ -59,12 +60,13 @@ const NewProyects = () => {
             <Tab key="DocuPro" title="DocuPro">
               <Card className="p-5">
                 <div className="flex justify-center max-sm:flex-wrap">
-                <div>
+                  <div>
                     <Image
+                      className="max-w-60
+                    "
                       isZoomed
-                      width={600}
                       alt="NextUI Fruit Image with Zoom"
-                      src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
+                      src="assets/img/docupro.jpeg"
                     />
                   </div>
                   <div className="flex flex-col justify-between">
@@ -84,7 +86,7 @@ const NewProyects = () => {
                         en la gestión documental con DocuPro.
                       </CardBody>
                     </div>
-                    <div>
+                    <div className=" px-10">
                       <Button className="w-10 " color="primary" variant="ghost">
                         Obtener
                       </Button>
@@ -96,12 +98,13 @@ const NewProyects = () => {
             <Tab key="WebSite" title="WebSite">
               <Card className="p-5">
                 <div className="flex justify-center max-sm:flex-wrap">
-                <div>
+                  <div>
                     <Image
+                      className="max-w-60
+                    "
                       isZoomed
-                      width={600}
                       alt="NextUI Fruit Image with Zoom"
-                      src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
+                      src="assets/img/carro.jpeg"
                     />
                   </div>
                   <div className="flex flex-col justify-between">
@@ -123,7 +126,7 @@ const NewProyects = () => {
                         desarrollo web con IVC.
                       </CardBody>
                     </div>
-                    <div>
+                    <div className=" px-10">
                       <Button className="w-10 " color="primary" variant="ghost">
                         Obtener
                       </Button>

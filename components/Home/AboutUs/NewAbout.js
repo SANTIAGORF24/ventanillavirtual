@@ -114,32 +114,95 @@ export function NewAbout() {
               modules={[EffectCards]}
               className="w-60 h-80"
             >
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-rose-600">
-                Slide 1
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#e4fbfb]">
+                <div>
+                  <Image
+                    isZoomed
+                    width={600}
+                    alt="NextUI Fruit Image with Zoom"
+                    src="assets/img/react2.png"
+                  />
+                </div>
               </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-fuchsia-950">
-                Slide 2
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#fdd7e4]">
+                <div>
+                  <Image
+                    isZoomed
+                    width={600}
+                    alt="NextUI Fruit Image with Zoom"
+                    src="assets/img/html.png"
+                  />
+                </div>
               </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-purple-700">
-                Slide 3
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#ffcba4]">
+                <div>
+                  <Image
+                    isZoomed
+                    width={600}
+                    alt="NextUI Fruit Image with Zoom"
+                    src="assets/img/css.png"
+                  />
+                </div>
               </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-violet-600">
-                Slide 4
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#e6e6fa]">
+                <div>
+                  <Image
+                    isZoomed
+                    width={600}
+                    alt="NextUI Fruit Image with Zoom"
+                    src="assets/img/javascript.png"
+                  />
+                </div>
               </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-cyan-400">
-                Slide 5
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#afeeee]">
+                <div>
+                  <Image
+                    isZoomed
+                    width={600}
+                    alt="NextUI Fruit Image with Zoom"
+                    src="assets/img/java.png"
+                  />
+                </div>
               </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-teal-900">
-                Slide 6
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#a3ffac]">
+                <div>
+                  <Image
+                    isZoomed
+                    width={600}
+                    alt="NextUI Fruit Image with Zoom"
+                    src="assets/img/python2.png"
+                  />
+                </div>
               </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-green-600">
-                Slide 7
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#c5e0dc]">
+                <div>
+                  <Image
+                    isZoomed
+                    width={600}
+                    alt="NextUI Fruit Image with Zoom"
+                    src="assets/img/sql.png"
+                  />
+                </div>
               </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-yellow-300">
-                Slide 8
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#d1eaf9]">
+                <div>
+                  <Image
+                    isZoomed
+                    width={600}
+                    alt="NextUI Fruit Image with Zoom"
+                    src="assets/img/tailwind2.png"
+                  />
+                </div>
               </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-amber-300">
-                Slide 9
+              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#c3dff9]">
+                <div>
+                  <Image
+                    isZoomed
+                    width={600}
+                    alt="NextUI Fruit Image with Zoom"
+                    src="assets/img/flutter2.png"
+                  />
+                </div>
               </SwiperSlide>
             </Swiper>
           </div>
