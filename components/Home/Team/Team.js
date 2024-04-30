@@ -193,7 +193,7 @@ const Team = () => {
             <div>
               <Card className="p-5 flex items-center justify-center ">
                 <div className="sm:flex items-center max-w-8xl">
-                  g
+                
                   <div className="flex justify-center items-center">
                     <img
                       className="max-w-64 rounded-md"
