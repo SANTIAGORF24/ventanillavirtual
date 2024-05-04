@@ -14,9 +14,15 @@ const Team = () => {
   // import required modules
 
   return (
-    <div className="px-3 sm:flex items-center justify-center max-w-full">
+    <div className="mt-20 px-3 sm:flex items-center justify-center max-w-full">
       <div className="w-full sm:w-4/5 ">
-        <h2 className="text-3xl font-bold py-10"> Team</h2>
+        <div className="mb-10 flex flex-col justify-center items-center space-y-8">
+          <h2 className="font-extrabold text-4xl w-4/6 text-center">
+            Nuestro Equipo de Desarrolladores
+          </h2>
+          <p>Más de 500 desarrolladores forman parte de nuestro equipo</p>
+        </div>
+
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -44,23 +50,20 @@ const Team = () => {
                   <div className="flex-colum max-sm:py-3">
                     <div>
                       <p>
-                        Soy Santiago Ramirez Forero. Estudiante de Ingeniería de
-                        Sistemas con experiencia estratégica en el ámbito
-                        gubernamental y nacional, destacándome en proyectos con
-                        HTML, CSS3, Python, MySQL, Flutter, Java, React, Nextjs
-                        y Tailwind. Como Especialista en Soporte de Aplicaciones
-                        en el Ministerio de Deporte, lideré el soporte técnico
-                        de GESDOC, implementando funciones y garantizando
-                        eficiencia. Combino habilidades en soporte técnico y
-                        diseño multimedia para contribuir al éxito operativo y
-                        creativo en entornos profesionales. Busco nuevos
-                        desafíos para seguir creciendo en la ingeniería de
-                        sistemas.
+                        Soy Santiago Ramirez Forero. Como Ingeniero de Sistemas,
+                        he liderado proyectos estratégicos en entidades
+                        gubernamentales y empresariales, destacándome por mi
+                        compromiso con la innovación tecnológica y el diseño de
+                        excelencia. Mi experiencia en el Ministerio del Deporte
+                        y el Colegio Nacional de Curadores Urbanos ha
+                        enriquecido mis habilidades en el desarrollo de
+                        aplicaciones, desde HTML y CSS3 hasta Python, React y
+                        Flask.
                       </p>
                     </div>
                     <div className="sm:flex justify-between items-center p-10">
                       <div>
-                        <h3 className="font-bold">CEO Inspirador</h3>
+                        <h3 className="font-bold"> Desarrollador Full Stack</h3>
                         <p>Santiago Ramírez Forero</p>
                       </div>
                       <div>
@@ -124,21 +127,24 @@ const Team = () => {
                   <div className="flex-colum max-sm:py-3">
                     <div>
                       <p>
-                        Soy Macjainer Molano Ramos, estudiante de Ingeniería de
-                        Sistemas, apasionado por la ingeniería de software y
-                        desarrollo web. Con sólida formación académica, destaco
-                        en diseño e implementación de sistemas informáticos, así
-                        como en desarrollo Front End (HTML, CSS, JavaScript,
-                        React.js) y bases de datos (SQL, MySQL, Python). Mi
-                        experiencia en servicio al cliente fortaleció
-                        habilidades comunicativas, pero mi enfoque profesional
-                        se centra en la programación. Activamente en busca de
-                        oportunidades para contribuir a proyectos desafiantes
+                        Soy Macjainer Molano Ramos, Ingeniero de Sistemas,
+                        apasionado por la ingeniería de software y desarrollo
+                        web. Con sólida formación académica, destaco en diseño e
+                        implementación de sistemas informáticos, así como en
+                        desarrollo Front End (HTML, CSS, JavaScript, React.js) y
+                        bases de datos (SQL, MySQL, Python). Mi experiencia en
+                        servicio al cliente fortaleció habilidades
+                        comunicativas, pero mi enfoque profesional se centra en
+                        la programación. Activamente en busca de oportunidades
+                        para contribuir a proyectos desafiantes
                       </p>
                     </div>
                     <div className="sm:flex justify-between items-center p-10">
                       <div>
-                        <h3 className="font-bold">CEO Transformador</h3>
+                        <h3 className="font-bold">
+                          {" "}
+                          Desarrollador Full Stack (WordPress)
+                        </h3>
                         <p>Macjainer Molano Ramos</p>
                       </div>
                       <div>
@@ -193,7 +199,6 @@ const Team = () => {
             <div>
               <Card className="p-5 flex items-center justify-center ">
                 <div className="sm:flex items-center max-w-8xl">
-                
                   <div className="flex justify-center items-center">
                     <img
                       className="max-w-64 rounded-md"
@@ -216,7 +221,7 @@ const Team = () => {
                     </div>
                     <div className="sm:flex justify-between items-center p-10">
                       <div>
-                        <h3 className="font-bold">CEO Innovador</h3>
+                        <h3 className="font-bold"> Desarrollador Full Stack</h3>
                         <p>Sebastian Sora Pinto</p>
                       </div>
                       <div>
@@ -297,7 +302,10 @@ const Team = () => {
                     </div>
                     <div className="sm:flex justify-between items-center p-10">
                       <div>
-                        <h3 className="font-bold">CEO Colaborativo</h3>
+                        <h3 className="font-bold">
+                          {" "}
+                          Desarrollador Full Stack / Desarrollador Movil
+                        </h3>
                         <p>Carlos Enrrique Vargas</p>
                       </div>
                       <div>

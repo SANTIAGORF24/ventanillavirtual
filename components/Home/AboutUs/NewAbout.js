@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import {
   Card,
   CardHeader,
@@ -18,6 +18,32 @@ import { EffectCards } from "swiper/modules";
 import "../../../app/globals.css";
 
 export function NewAbout() {
+  const slides = [
+    { src: "assets/img/react2.png" },
+    { src: "assets/img/html.png" },
+    { src: "assets/img/css.png" },
+    { src: "assets/img/javascript.png" },
+    { src: "assets/img/java.png" },
+    { src: "assets/img/python2.png" },
+    { src: "assets/img/sql.png" },
+    { src: "assets/img/tailwind2.png" },
+    { src: "assets/img/flutter2.png" },
+  ];
+
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    const swiper = swiperRef.current.swiper;
+
+    const autoplayInterval = setInterval(() => {
+      if (swiper) {
+        swiper.slideNext();
+      }
+    }, 2000); // Cambiar 2000 por el intervalo deseado en milisegundos
+
+    return () => clearInterval(autoplayInterval);
+  }, []);
+
   return (
     <div className="px-3 -my-12 sm:flex items-center justify-center max-w-full">
       <div className="w-4/5 max-sm:w-full">
@@ -62,7 +88,7 @@ export function NewAbout() {
           <div className="w-2/4 max-sm:w-full my-3">
             <Accordion variant="splitted">
               <AccordionItem
-                data-open="true"
+                data-open="true" // Este atributo indica que el acordeón estará abierto por defecto
                 aria-label="¿Qué Hacemos?"
                 title="¿Qué Hacemos?"
               >
@@ -77,6 +103,7 @@ export function NewAbout() {
                   creativa.
                 </p>
               </AccordionItem>
+
               <AccordionItem
                 aria-label="Comprometidos con tu Éxito"
                 title="Comprometidos con tu Éxito"
@@ -113,97 +140,27 @@ export function NewAbout() {
               grabCursor={true}
               modules={[EffectCards]}
               className="w-60 h-80"
+              loop={true}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false, // Permite que el autoplay continúe incluso si el usuario interactúa con el Swiper
+              }}
+              ref={swiperRef}
             >
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#e4fbfb]">
-                <div>
-                  <Image
-                    isZoomed
-                    width={600}
-                    alt="NextUI Fruit Image with Zoom"
-                    src="assets/img/react2.png"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#fdd7e4]">
-                <div>
-                  <Image
-                    isZoomed
-                    width={600}
-                    alt="NextUI Fruit Image with Zoom"
-                    src="assets/img/html.png"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#ffcba4]">
-                <div>
-                  <Image
-                    isZoomed
-                    width={600}
-                    alt="NextUI Fruit Image with Zoom"
-                    src="assets/img/css.png"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#e6e6fa]">
-                <div>
-                  <Image
-                    isZoomed
-                    width={600}
-                    alt="NextUI Fruit Image with Zoom"
-                    src="assets/img/javascript.png"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#afeeee]">
-                <div>
-                  <Image
-                    isZoomed
-                    width={600}
-                    alt="NextUI Fruit Image with Zoom"
-                    src="assets/img/java.png"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#a3ffac]">
-                <div>
-                  <Image
-                    isZoomed
-                    width={600}
-                    alt="NextUI Fruit Image with Zoom"
-                    src="assets/img/python2.png"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#c5e0dc]">
-                <div>
-                  <Image
-                    isZoomed
-                    width={600}
-                    alt="NextUI Fruit Image with Zoom"
-                    src="assets/img/sql.png"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#d1eaf9]">
-                <div>
-                  <Image
-                    isZoomed
-                    width={600}
-                    alt="NextUI Fruit Image with Zoom"
-                    src="assets/img/tailwind2.png"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className=" flex items-center justify-center rounded-2xl text-base font-bold text-white bg-[#c3dff9]">
-                <div>
-                  <Image
-                    isZoomed
-                    width={600}
-                    alt="NextUI Fruit Image with Zoom"
-                    src="assets/img/flutter2.png"
-                  />
-                </div>
-              </SwiperSlide>
+              {slides.map((slide, index) => (
+                <SwiperSlide
+                  key={index}
+                  className="flex items-center justify-center bg-white rounded-2xl text-base font-bold shadow-lg"
+                >
+                  <div>
+                    <Image
+                      width={600}
+                      alt="NextUI Fruit Image with Zoom"
+                      src={slide.src}
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>
