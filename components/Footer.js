@@ -15,11 +15,11 @@ const Footer = () => {
     <div className="w-full h-full bg-[#005BC4] flex sm:justify-center py-6 max-sm:px-12">
       <div className="w-4/5 flex flex-col items-center gap-6 max-sm:w-full">
         <div className="w-full flex gap-4 justify-center items-center">
-          <div className="w-[100px]">
+          <div className="w-[50px]">
             <Image
               src="/assets/img/logo.png"
-              width={200}
-              height={200}
+              width={100}
+              height={100}
               alt="img"
               className="w-full h-full object-contain brightness-200"
             />

@@ -45,12 +45,14 @@ export function NewAbout() {
   }, []);
 
   return (
-    <div className="px-3 -my-12 sm:flex items-center justify-center max-w-full">
-      <div className="w-4/5 max-sm:w-full">
-        <h2 className="text-3xl font-bold py-10"> Acerca de</h2>
-        <div className="-my-8 sm:flex items-center py-8">
-          <div className="full-w">
-            <Card className="max-w-[400px]">
+    <div className="mt-10 px-3 -my-12 flex flex-col items-center justify-center max-w-full">
+      <div className="w-full lg:w-4/5">
+        <h2 className="font-extrabold text-3xl md:text-5xl text-center mb-5">
+          Acerca de Nosotros
+        </h2>
+        <div className="flex flex-col lg:flex-row items-center py-8">
+          <div className="mb-8 lg:mb-0 lg:w-1/3">
+            <Card className="max-w-[400px] mx-auto">
               <CardHeader className="flex gap-3">
                 <Image
                   alt="nextui logo"
@@ -85,10 +87,10 @@ export function NewAbout() {
               </CardFooter>
             </Card>
           </div>
-          <div className="w-2/4 max-sm:w-full my-3">
+          <div className="mb-8 lg:mb-0 lg:w-1/3">
             <Accordion variant="splitted">
               <AccordionItem
-                data-open="true" // Este atributo indica que el acordeón estará abierto por defecto
+                data-open="true"
                 aria-label="¿Qué Hacemos?"
                 title="¿Qué Hacemos?"
               >
@@ -103,7 +105,6 @@ export function NewAbout() {
                   creativa.
                 </p>
               </AccordionItem>
-
               <AccordionItem
                 aria-label="Comprometidos con tu Éxito"
                 title="Comprometidos con tu Éxito"
@@ -134,12 +135,12 @@ export function NewAbout() {
               </AccordionItem>
             </Accordion>
           </div>
-          <div className="w-1/4 max-sm:px-20">
+          <div className="mb-8 lg:mb-0 lg:w-1/3">
             <Swiper
               effect={"cards"}
               grabCursor={true}
               modules={[EffectCards]}
-              className="w-60 h-80"
+              className="w-60 h-80 mx-auto"
               loop={true}
               autoplay={{
                 delay: 2000,

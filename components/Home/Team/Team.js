@@ -16,8 +16,8 @@ const Team = () => {
   return (
     <div className="mt-20 px-3 sm:flex items-center justify-center max-w-full">
       <div className="w-full sm:w-4/5 ">
-        <div className="mb-10 flex flex-col justify-center items-center space-y-8">
-          <h2 className="font-extrabold text-4xl w-4/6 text-center">
+        <div className="mb-10 flex flex-col items-center space-y-8">
+          <h2 className="font-extrabold text-3xl sm:text-4xl text-center">
             Nuestro Equipo de Desarrolladores
           </h2>
           <p>Más de 500 desarrolladores forman parte de nuestro equipo</p>

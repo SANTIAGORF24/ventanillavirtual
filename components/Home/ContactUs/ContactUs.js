@@ -4,9 +4,11 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className="px-3 sm:flex items-center flex-col justify-center max-w-full pb-10">
+    <div className="mt-10 px-3 sm:flex items-center flex-col justify-center max-w-full pb-10">
       <div className="flex flex-col justify-between w-4/5">
-        <h2 className="text-3xl font-bold py-10">Contáctanos</h2>
+        <h2 className="font-extrabold text-3xl md:text-5xl text-center mb-10">
+          contactanos
+        </h2>
       </div>
       <div className="w-4/5 sm:flex justify-between">
         <div className="w-1/3 flex items-center h-[350px] gap-6 max-sm:-my-10">
