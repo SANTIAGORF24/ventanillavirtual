@@ -25,7 +25,7 @@ const NewProyects = () => {
               ayudaremos a destacar en la web y atraer a tus clientes
               potenciales.
             </p>
-            <Button className="bg-blue-200 text-gray-500 mb-4 w-full md:w-auto">
+            <Button className="w-full bg-blue-200 text-gray-500 mb-4">
               Empezar
             </Button>
             <h4 className="font-semibold mb-2">Qué incluye:</h4>
@@ -48,7 +48,7 @@ const NewProyects = () => {
               aplicaciones robustas y funcionales que potencian tu negocio y
               proporcionan una experiencia óptima para tus usuarios.
             </p>
-            <Button className="bg-blue-200 text-gray-500 mb-4 w-full md:w-auto">
+            <Button className="w-full bg-blue-200 text-gray-500 mb-4">
               Cotizar
             </Button>
             <h4 className="font-semibold mb-2">Qué ofrecemos:</h4>
@@ -75,7 +75,7 @@ const NewProyects = () => {
               optimización para motores de búsqueda, te ayudaremos a destacar en
               la web y atraer a tus clientes potenciales.
             </p>
-            <Button className="bg-blue-200 text-gray-500 mb-4 w-full md:w-auto">
+            <Button className="w-full bg-blue-200 text-gray-500 mb-4">
               Empezar
             </Button>
             <h4 className="font-semibold mb-2">Qué ofrecemos:</h4>
