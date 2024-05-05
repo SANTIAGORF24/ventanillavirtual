@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -14,7 +14,8 @@ import {
 import { AcmeLogo } from "./AcmeLogo.jsx";
 
 export function NewNav() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentSection, setCurrentSection] = useState("");
 
   const menuItems = [
     "",
@@ -24,9 +25,37 @@ export function NewNav() {
     "Testimonios",
     "Equipo",
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Lógica para determinar la sección actual basada en el desplazamiento de la página
+      // Aquí asumo que tienes IDs únicos para las secciones
+      const sections = document.querySelectorAll("section");
+      let current = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (window.scrollY >= sectionTop - sectionHeight / 3) {
+          current = section.id;
+        }
+      });
+
+      setCurrentSection(current);
+    };
+
+    // Agregar el listener de scroll cuando se monta el componente
+    window.addEventListener("scroll", handleScroll);
+    // Limpiar el listener cuando se desmonta el componente
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <Navbar
-      className="pt-5 w-full "
+      className="pt-5 w-full"
       maxWidth="2xl"
       onMenuOpenChange={setIsMenuOpen}
     >
@@ -37,30 +66,19 @@ export function NewNav() {
         />
         <AcmeLogo />
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4 " justify="center">
-        <NavbarItem className="space-x-4 ">
-          <Link color="foreground" href="#inicio">
-            Inicio
-          </Link>
-          <Link color="foreground" href="#acerca">
-            Acerca de
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#cotizar">
-            Cotizar
-          </Link>
-        </NavbarItem>
-        <NavbarItem className="space-x-4 ">
-          <Link color="foreground" href="#clientes">
-            Clientes
-          </Link>
-        </NavbarItem>
-        <NavbarItem className="space-x-4 ">
-          <Link color="foreground" href="#equipo">
-            Equipo
-          </Link>
-        </NavbarItem>
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        {menuItems.map((item, index) => (
+          <NavbarItem key={item}>
+            <Link
+              color={
+                currentSection === item.toLowerCase() ? "primary" : "foreground"
+              }
+              href={`#${item.toLowerCase()}`}
+            >
+              {item}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
@@ -71,17 +89,13 @@ export function NewNav() {
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem key={item}>
             <Link
               color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                  ? "foreground"
-                  : "foreground"
+                currentSection === item.toLowerCase() ? "primary" : "foreground"
               }
               className="w-full"
-              href="#"
+              href={`#${item.toLowerCase()}`}
               size="lg"
             >
               {item}
