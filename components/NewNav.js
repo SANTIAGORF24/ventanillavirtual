@@ -64,7 +64,7 @@ export function NewNav() {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Button as={Link} color="primary" href="#contacto" variant="flat">
             Contactanos
           </Button>
         </NavbarItem>
