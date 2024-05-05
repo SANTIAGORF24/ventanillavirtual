@@ -1,13 +1,5 @@
 import React from "react";
 import { Divider } from "@nextui-org/react";
-import {
-  Dropdown,
-  DropdownTrigger,
-  DropdownMenu,
-  DropdownItem,
-  Button,
-  cn,
-} from "@nextui-org/react";
 
 const NewContactBanner = () => {
   return (
@@ -31,7 +23,7 @@ const NewContactBanner = () => {
               <div className="space-y-2 flex items-center">
                 <img className="phoneimg" src={"assets/img/mail.png"}></img>
                 <p className="text-small text-default-400 px-3">
-                  sibartech@sibartech.com
+                  sibartech@gmail.com
                 </p>
               </div>
             </div>

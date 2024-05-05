@@ -14,7 +14,10 @@ const Team = () => {
   // import required modules
 
   return (
-    <div className="mt-20 px-3 sm:flex items-center justify-center max-w-full">
+    <div
+      id="equipo"
+      className="mt-20 px-3 sm:flex items-center justify-center max-w-full"
+    >
       <div className="w-full sm:w-4/5 ">
         <div className="mb-10 flex flex-col items-center space-y-8">
           <h2 className="font-extrabold text-3xl sm:text-4xl text-center">

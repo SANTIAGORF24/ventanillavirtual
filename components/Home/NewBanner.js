@@ -3,7 +3,10 @@ import { Button, Image, Input } from "@nextui-org/react";
 
 const NewBanner = () => {
   return (
-    <div className="px-3 sm:flex items-center justify-center max-w-full py-10">
+    <div
+      id="inicio"
+      className="px-3 sm:flex items-center justify-center max-w-full py-10"
+    >
       <div className="sm:flex items-center space-x-6 w-full sm:w-4/5">
         <div>
           <div>

@@ -38,7 +38,7 @@ const Footer = () => {
           <p className="text-white">
             Cotactanos a:{" "}
             <a className="font-bold" href="mailto:sibartec@sibartech.com">
-              sibartech@sibartech.com
+              sibartech@gmail.com
             </a>
           </p>
         </div>

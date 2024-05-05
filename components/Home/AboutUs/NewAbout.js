@@ -45,7 +45,10 @@ export function NewAbout() {
   }, []);
 
   return (
-    <div className="mt-10 px-3 -my-12 flex flex-col items-center justify-center max-w-full">
+    <div
+      id="acerca"
+      className="mt-10 px-3 -my-12 flex flex-col items-center justify-center max-w-full"
+    >
       <div className="w-full lg:w-4/5">
         <h2 className="font-extrabold text-3xl md:text-5xl text-center mb-5">
           Acerca de Nosotros

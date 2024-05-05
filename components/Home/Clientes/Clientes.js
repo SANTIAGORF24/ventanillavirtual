@@ -2,7 +2,10 @@ import React from "react";
 
 const Clientes = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center">
+    <div
+      id="clientes"
+      className="w-full flex flex-col justify-center items-center"
+    >
       <div className="w-full max-w-4xl flex flex-col justify-center items-center px-4">
         <div className="flex flex-col justify-center items-center space-y-8">
           <p>500 personas han dicho que nos prefieren</p>
@@ -11,7 +14,7 @@ const Clientes = () => {
           </h2>
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between mt-8">
-          <div className="bg-blue-200 rounded-lg p-6 text-center w-full md:w-96 mx-4 mb-8 md:mb-0">
+          <div className="bg-blue-200 rounded-lg p-6 text-center w-full md:w-96 mx-4 mb-8 md:mb-0 shadow-lg">
             <div className="flex justify-center mb-4">
               {[...Array(5)].map((_, index) => (
                 <svg
@@ -37,7 +40,7 @@ const Clientes = () => {
             </p>
             <p className="text-sm">Colegio Nacional De Curadores Urbanos</p>
           </div>
-          <div className="bg-blue-200 rounded-lg p-6 text-center w-full md:w-96 mx-4 mb-8 md:mb-0">
+          <div className="bg-blue-200 rounded-lg p-6 text-center w-full md:w-96 mx-4 mb-8 md:mb-0 shadow-lg">
             <div className="flex justify-center mb-4">
               {[...Array(5)].map((_, index) => (
                 <svg
@@ -61,7 +64,7 @@ const Clientes = () => {
             </p>
             <p className="text-sm">Flow-inc</p>
           </div>
-          <div className="bg-blue-200 rounded-lg p-6 text-center w-full md:w-96 mx-4">
+          <div className="bg-blue-200 rounded-lg p-6 text-center w-full md:w-96 mx-4 shadow-lg">
             <div className="flex justify-center mb-4">
               {[...Array(5)].map((_, index) => (
                 <svg

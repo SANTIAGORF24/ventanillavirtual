@@ -39,30 +39,32 @@ export function NewNav() {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4 " justify="center">
         <NavbarItem className="space-x-4 ">
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#inicio">
             Inicio
           </Link>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#acerca">
             Acerca de
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Proyectos
+        <NavbarItem>
+          <Link color="foreground" href="#cotizar">
+            Cotizar
           </Link>
         </NavbarItem>
         <NavbarItem className="space-x-4 ">
-          <Link color="foreground" href="#">
-            Testimonios
+          <Link color="foreground" href="#clientes">
+            Clientes
           </Link>
-          <Link color="foreground" href="#">
+        </NavbarItem>
+        <NavbarItem className="space-x-4 ">
+          <Link color="foreground" href="#equipo">
             Equipo
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Button as={Link} color="primary" href="#contacto" variant="flat">
             Contactanos
           </Button>
         </NavbarItem>
