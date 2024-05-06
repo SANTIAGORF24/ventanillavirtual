@@ -71,7 +71,7 @@ const NewProjects = () => {
             <p className="mb-4">
               ¿Buscas llevar tu presencia en línea al siguiente nivel con una
               landing totalmente personalizada y única? Nuestro servicio de
-              "Landing a Código" ofrece soluciones a medida para tu negocio. Con
+              Landing a Código ofrece soluciones a medida para tu negocio. Con
               una combinación de diseño personalizado, funcionalidad potente y
               optimización para motores de búsqueda, te ayudaremos a destacar en
               la web y atraer a tus clientes potenciales.
