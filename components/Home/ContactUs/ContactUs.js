@@ -21,7 +21,7 @@ const ContactUs = () => {
             contactanos para saber más
           </p>
           <Image
-            src="/assets/img/contactimg.jpg"
+            src="/assets/img/Interno/contactimg.jpg"
             width={400}
             height={400}
             alt="img"
