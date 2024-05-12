@@ -39,7 +39,7 @@ function CardComponent({ title, subtitle, body, footer }) {
       <CardFooter>
         {isMounted ? (
           <Link
-            href="/contacto"
+            href="#contacto"
             color="primary"
             underline="hover"
             legacyBehavior

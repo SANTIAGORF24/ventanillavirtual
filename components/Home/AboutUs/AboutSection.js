@@ -34,7 +34,7 @@ function AboutSection({ slides }) {
             Desarrollo Web por Sibartech
           </h1>
           <div className="flex flex-col lg:flex-row items-center py-8">
-            <div className="mb-8 lg:mb-0 lg:w-1/3">
+            <div className="mb-8 lg:mb-0 lg:w-1/3 ">
               <CardComponent
                 title="Sobre Nosotros"
                 subtitle="Transformando Ideas en Realidad"
