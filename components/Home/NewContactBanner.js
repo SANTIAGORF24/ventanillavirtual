@@ -3,14 +3,26 @@ import { Divider } from "@nextui-org/react";
 
 const ContactInfo = ({ icon, text }) => (
   <div className="space-y-1 flex items-center">
-    <img className="phoneimg" src={icon} alt="Icono de contacto" />
+    <img
+      className="phoneimg"
+      src={icon}
+      alt="Icono de contacto"
+      width={24}
+      height={24}
+    />
     <p className="text-small px-3">{text}</p>
   </div>
 );
 
 const SocialMediaIcon = ({ icon }) => (
   <div>
-    <img className="phoneimg" src={icon} alt="Icono de red social" />
+    <img
+      className="phoneimg"
+      src={icon}
+      alt="Icono de red social"
+      width={24}
+      height={24}
+    />
   </div>
 );
 

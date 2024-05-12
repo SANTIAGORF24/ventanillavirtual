@@ -89,6 +89,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/facebook.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -97,6 +99,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/linked.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -105,6 +109,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/twitter.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -113,6 +119,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/instagram.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                           </div>
@@ -177,6 +185,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/facebook.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -185,6 +195,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/linked.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -193,6 +205,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/twitter.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -201,6 +215,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/instagram.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                           </div>
@@ -261,6 +277,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/facebook.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -269,6 +287,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/linked.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -277,6 +297,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/twitter.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -285,6 +307,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/instagram.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                           </div>
@@ -352,6 +376,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/facebook.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -360,6 +386,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/linked.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -368,6 +396,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/twitter.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -376,6 +406,8 @@ const Team = () => {
                                 className="phoneimg"
                                 src={"assets/img/Contact/instagram.jpg"}
                                 alt="Desarrollo Web con sibartech"
+                                width={24}
+                                height={24}
                               ></img>
                             </div>
                           </div>
