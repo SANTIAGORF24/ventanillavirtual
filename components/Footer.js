@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="w-full flex gap-4 justify-center items-center">
           <div className="w-[50px]">
             <Image
-              src="/assets/img/logo.png"
+              src="/assets/img/Interno/logo.png"
               width={70}
               height={70}
               alt="img"
