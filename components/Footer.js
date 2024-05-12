@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         <div>
           <p className="text-white max-sm:px-5">
-            ©2024 Todos los derechos reservados. Sibartech. xd
+            ©2024 Todos los derechos reservados. Sibartech.
           </p>
         </div>
       </div>
