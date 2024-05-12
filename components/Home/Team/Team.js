@@ -47,7 +47,7 @@ const Team = () => {
                   <div className="flex justify-center">
                     <img
                       className="max-w-64 rounded-md"
-                      src="./assets/img/ramirez.jpg"
+                      src="./assets/img/Team/ramirez.jpg"
                       alt="Desarrollador de sibartech"
                     />
                   </div>
@@ -85,7 +85,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/facebook.png"}
+                                src={"assets/img/Contact/facebook.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
@@ -93,7 +93,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/linked.png"}
+                                src={"assets/img/Contact/linked.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
@@ -101,7 +101,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/twitter.png"}
+                                src={"assets/img/Contact/twitter.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
@@ -109,7 +109,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/instagram.png"}
+                                src={"assets/img/Contact/instagram.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
@@ -129,7 +129,7 @@ const Team = () => {
                   <div className="flex justify-center items-center">
                     <img
                       className="max-w-64 rounded-md"
-                      src="assets/img/mac.jpg"
+                      src="assets/img/Team/mac.jpg"
                       alt="Desarrollador de sibartech"
                     />
                   </div>
@@ -171,7 +171,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/facebook.png"}
+                                src={"assets/img/Contact/facebook.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
@@ -179,7 +179,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/linked.png"}
+                                src={"assets/img/Contact/linked.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
@@ -187,7 +187,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/twitter.png"}
+                                src={"assets/img/Contact/twitter.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
@@ -195,7 +195,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/instagram.png"}
+                                src={"assets/img/Contact/instagram.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
@@ -215,7 +215,7 @@ const Team = () => {
                   <div className="flex justify-center items-center">
                     <img
                       className="max-w-64 rounded-md"
-                      src="assets/img/Foto_Sebastian.jpg"
+                      src="assets/img/Team/Foto_Sebastian.jpg"
                       alt="Desarrollador de sibartech"
                     />
                   </div>
@@ -253,7 +253,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/facebook.png"}
+                                src={"assets/img/Contact/facebook.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
@@ -261,7 +261,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/linked.png"}
+                                src={"assets/img/Contact/linked.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
@@ -269,7 +269,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/twitter.png"}
+                                src={"assets/img/Contact/twitter.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
@@ -277,7 +277,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/instagram.png"}
+                                src={"assets/img/Contact/instagram.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
@@ -297,7 +297,7 @@ const Team = () => {
                   <div className="flex justify-center items-center">
                     <img
                       className="max-w-64 rounded-md"
-                      src="assets/img/Foto_Charles.jpg"
+                      src="assets/img/Team/Foto_Charles.jpg"
                       alt="Desarrollador de sibartech"
                     />
                   </div>
@@ -342,7 +342,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/facebook.png"}
+                                src={"assets/img/Contact/facebook.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
@@ -350,7 +350,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/linked.png"}
+                                src={"assets/img/Contact/linked.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
@@ -358,7 +358,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/twitter.png"}
+                                src={"assets/img/Contact/twitter.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
@@ -366,7 +366,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/instagram.png"}
+                                src={"assets/img/Contact/instagram.jpg"}
                                 alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>

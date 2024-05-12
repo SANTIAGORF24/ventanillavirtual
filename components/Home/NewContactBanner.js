@@ -27,12 +27,12 @@ const NewContactBanner = () => {
           <div>
             <div className="max-w-md">
               <ContactInfo
-                icon={"assets/img/phone.png"}
+                icon={"assets/img/Contact/phone.jpg"}
                 text={"+57 3154852832"}
               />
               <Divider className="my-4 " />
               <ContactInfo
-                icon={"assets/img/mail.png"}
+                icon={"assets/img/Contact/mail.jpg"}
                 text={"sibartech@gmail.com"}
               />
             </div>
@@ -47,13 +47,13 @@ const NewContactBanner = () => {
               </div>
               <Divider className="my-4" />
               <div className="flex h-5 items-center space-x-4 text-small max-sm:space-x-9">
-                <SocialMediaIcon icon={"assets/img/facebook.png"} />
+                <SocialMediaIcon icon={"assets/img/Contact/facebook.jpg"} />
                 <Divider orientation="vertical" />
-                <SocialMediaIcon icon={"assets/img/linked.png"} />
+                <SocialMediaIcon icon={"assets/img/Contact/linked.jpg"} />
                 <Divider orientation="vertical" />
-                <SocialMediaIcon icon={"assets/img/twitter.png"} />
+                <SocialMediaIcon icon={"assets/img/Contact/twitter.jpg"} />
                 <Divider orientation="vertical" />
-                <SocialMediaIcon icon={"assets/img/instagram.png"} />
+                <SocialMediaIcon icon={"assets/img/Contact/instagram.jpg"} />
               </div>
             </div>
           </div>

@@ -1,18 +1,17 @@
 // AboutSectionWithCards.js
 import React from "react";
 import AboutSection from "./AboutSection";
-import CardComponent from "./CardComponent";
 
 const slides = [
-  { src: "assets/img/react2.png" },
-  { src: "assets/img/html.png" },
-  { src: "assets/img/css.png" },
-  { src: "assets/img/javascript.png" },
-  { src: "assets/img/java.png" },
-  { src: "assets/img/python2.png" },
-  { src: "assets/img/sql.png" },
-  { src: "assets/img/tailwind2.png" },
-  { src: "assets/img/flutter2.png" },
+  { src: "assets/img/Lenguajes/react2.jpg" },
+  { src: "assets/img/Lenguajes/html.jpg" },
+  { src: "assets/img/Lenguajes/css.jpg" },
+  { src: "assets/img/Lenguajes/javascript.jpg" },
+  { src: "assets/img/Lenguajes/java.jpg" },
+  { src: "assets/img/Lenguajes/python2.jpg" },
+  { src: "assets/img/Lenguajes/sql.jpg" },
+  { src: "assets/img/Lenguajes/tailwind2.jpg" },
+  { src: "assets/img/Lenguajes/flutter2.jpg" },
 ];
 
 function AboutSectionWithCards() {
