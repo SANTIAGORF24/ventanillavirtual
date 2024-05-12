@@ -78,7 +78,7 @@ const Team = () => {
                             <h4 className="text-medium font-medium">
                               Social Media
                             </h4>
-                            <p className="text-small text-default-400">
+                            <p className="text-small text-black">
                               No dudes en segirnos en nuestras redes
                             </p>
                           </div>
@@ -174,7 +174,7 @@ const Team = () => {
                             <h4 className="text-medium font-medium">
                               Social Media
                             </h4>
-                            <p className="text-small text-default-400">
+                            <p className="text-small text-black">
                               No dudes en segirnos en nuestras redes
                             </p>
                           </div>
@@ -266,7 +266,7 @@ const Team = () => {
                             <h4 className="text-medium font-medium">
                               Social Media
                             </h4>
-                            <p className="text-small text-default-400">
+                            <p className="text-small text-black">
                               No dudes en segirnos en nuestras redes
                             </p>
                           </div>
@@ -365,7 +365,7 @@ const Team = () => {
                             <h4 className="text-medium font-medium">
                               Social Media
                             </h4>
-                            <p className="text-small text-default-400">
+                            <p className="text-small text-black">
                               No dudes en segirnos en nuestras redes
                             </p>
                           </div>
