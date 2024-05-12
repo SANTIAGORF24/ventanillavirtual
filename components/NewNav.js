@@ -53,7 +53,7 @@ export function NewNav() {
         <NavbarItem>
           <Button
             as={Link}
-            className="bg-blue-500 text-white"
+            className="bg-blue-600 text-white"
             href="#contacto"
             variant="flat"
           >
