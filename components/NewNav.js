@@ -13,20 +13,22 @@ import {
 
 import { AcmeLogo } from "./AcmeLogo.jsx";
 
+const menuItems = [
+  { label: "Inicio", href: "#inicio" },
+  { label: "Acerca de", href: "#acerca" },
+  { label: "Cotizar", href: "#cotizar" },
+  { label: "Clientes", href: "#clientes" },
+  { label: "Equipo", href: "#equipo" },
+];
+
 export function NewNav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
-    "",
-    "Inicio",
-    "Acerca de",
-    "Proyectos",
-    "Testimonios",
-    "Equipo",
-  ];
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   return (
     <Navbar
-      className="pt-5 w-full "
+      className="pt-5 w-full"
       maxWidth="2xl"
       onMenuOpenChange={setIsMenuOpen}
     >
@@ -34,33 +36,18 @@ export function NewNav() {
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
+          onClick={toggleMenu}
         />
         <AcmeLogo />
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4 " justify="center">
-        <NavbarItem className="space-x-4 ">
-          <Link color="foreground" href="#inicio">
-            Inicio
-          </Link>
-          <Link color="foreground" href="#acerca">
-            Acerca de
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#cotizar">
-            Cotizar
-          </Link>
-        </NavbarItem>
-        <NavbarItem className="space-x-4 ">
-          <Link color="foreground" href="#clientes">
-            Clientes
-          </Link>
-        </NavbarItem>
-        <NavbarItem className="space-x-4 ">
-          <Link color="foreground" href="#equipo">
-            Equipo
-          </Link>
-        </NavbarItem>
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        {menuItems.map((item, index) => (
+          <NavbarItem key={index}>
+            <Link color="foreground" href={item.href}>
+              {item.label}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
@@ -69,26 +56,22 @@ export function NewNav() {
           </Button>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                  ? "foreground"
-                  : "foreground"
-              }
-              className="w-full"
-              href="#"
-              size="lg"
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
-      </NavbarMenu>
+      {isMenuOpen && (
+        <NavbarMenu>
+          {menuItems.map((item, index) => (
+            <NavbarMenuItem key={`${item.label}-${index}`}>
+              <Link
+                color={index === 0 ? "primary" : "foreground"}
+                className="w-full"
+                href={item.href}
+                size="lg"
+              >
+                {item.label}
+              </Link>
+            </NavbarMenuItem>
+          ))}
+        </NavbarMenu>
+      )}
     </Navbar>
   );
 }

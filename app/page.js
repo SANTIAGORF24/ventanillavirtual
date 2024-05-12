@@ -5,6 +5,7 @@ import NewProyects from "@/components/Home/Proyects/NewProyects";
 import Team from "@/components/Home/Team/Team";
 import ContactUs from "@/components/Home/ContactUs/ContactUs";
 import Clientes from "@/components/Home/Clientes/Clientes";
+import WhatsAppButton from "@/components/Home/WhatsAppButton/WhatsAppButton";
 export default function Home() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function Home() {
       <Clientes />
       <Team />
       <ContactUs />
+      <WhatsAppButton />
     </>
   );
 }
