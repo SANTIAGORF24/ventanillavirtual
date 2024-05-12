@@ -47,7 +47,7 @@ const NewBanner = () => {
       className="px-3 sm:flex items-center justify-center max-w-full py-10"
     >
       <div className="sm:flex items-center space-x-6 w-full sm:w-4/5">
-        <div className="w-3/6">
+        <div className="sm:w-3/6 w-full">
           <div>
             <h1 className="Newbanner text-3xl font-extrabold sm:text-6xl mb-5">
               Desarrollo Web con SIBARTECH
