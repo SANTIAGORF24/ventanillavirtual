@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Button, Image, Input } from "@nextui-org/react";
+import { Button, Input, Image } from "@nextui-org/react";
 import emailjs from "emailjs-com";
 
 const NewBanner = () => {
@@ -13,16 +13,11 @@ const NewBanner = () => {
     setIsSubmitting(true);
     setSubmitError(null);
 
-    const templateParamsToUser = {
-      to_email: email,
-    };
-
-    const templateParamsToSibartech = {
-      from_email: email,
-    };
+    const templateParamsToUser = { to_email: email };
+    const templateParamsToSibartech = { from_email: email };
 
     try {
-      // Enviar correo a SIBARTECH
+      // Send email to SIBARTECH
       await emailjs.sendForm(
         "service_2akmeui",
         "template_wbj7c5o",
@@ -31,15 +26,15 @@ const NewBanner = () => {
         templateParamsToSibartech
       );
 
-      // Enviar correo al usuario
+      // Send email to the user
       await emailjs.send(
         "service_2akmeui",
-        "template_rqppcj1", // Reemplaza con el ID de tu nueva plantilla
+        "template_rqppcj1",
         templateParamsToUser,
         "eY3p1SSZJisXlHKqw"
       );
     } catch (error) {
-      setSubmitError(error.message);
+      setSubmitError("Error al enviar el correo electrónico");
       console.error("Error al enviar el correo electrónico:", error);
     } finally {
       setIsSubmitting(false);
@@ -54,11 +49,11 @@ const NewBanner = () => {
       <div className="sm:flex items-center space-x-6 w-full sm:w-4/5">
         <div>
           <div>
-            <h1 className="Newbanner text-6xl font-extrabold sm:text-8xl">
-              SIBARTECH
+            <h1 className="Newbanner text-4xl font-extrabold sm:text-6xl">
+              Desarrollo Web con SIBARTECH
             </h1>
             <h3 className="text-md sm:text-xl">
-              Programamos soluciones, creamos experiencias.
+              Programamos soluciones y creamos experiencias digitales únicas.
             </h3>
           </div>
           <form
@@ -90,7 +85,7 @@ const NewBanner = () => {
           <Image
             width={500}
             height={500}
-            alt="NextUI Fruit Image with Zoom"
+            alt="Desarrollo Web con SIBARTECH"
             src="assets/img/logo.png"
             className="mx-auto"
           />
