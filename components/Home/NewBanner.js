@@ -85,7 +85,7 @@ const NewBanner = () => {
           <Image
             width={400}
             height={400}
-            alt="Desarrollo Web con SIBARTECH"
+            alt="Desarrollo Web con sibartech"
             src="assets/img/logo.png"
             className="mx-auto"
           />

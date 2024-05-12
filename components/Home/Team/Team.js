@@ -48,6 +48,7 @@ const Team = () => {
                     <img
                       className="max-w-64 rounded-md"
                       src="./assets/img/ramirez.jpg"
+                      alt="Desarrollador de sibartech"
                     />
                   </div>
                   <div className="flex-colum max-sm:py-3">
@@ -85,6 +86,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/facebook.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -92,6 +94,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/linked.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -99,6 +102,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/twitter.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -106,6 +110,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/instagram.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                           </div>
@@ -125,6 +130,7 @@ const Team = () => {
                     <img
                       className="max-w-64 rounded-md"
                       src="assets/img/mac.jpg"
+                      alt="Desarrollador de sibartech"
                     />
                   </div>
                   <div className="flex-colum max-sm:py-3">
@@ -166,6 +172,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/facebook.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -173,6 +180,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/linked.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -180,6 +188,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/twitter.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -187,6 +196,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/instagram.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                           </div>
@@ -206,6 +216,7 @@ const Team = () => {
                     <img
                       className="max-w-64 rounded-md"
                       src="assets/img/Foto_Sebastian.jpg"
+                      alt="Desarrollador de sibartech"
                     />
                   </div>
                   <div className="flex-colum max-sm:py-3">
@@ -243,6 +254,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/facebook.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -250,6 +262,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/linked.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -257,6 +270,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/twitter.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -264,6 +278,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/instagram.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                           </div>
@@ -283,6 +298,7 @@ const Team = () => {
                     <img
                       className="max-w-64 rounded-md"
                       src="assets/img/Foto_Charles.jpg"
+                      alt="Desarrollador de sibartech"
                     />
                   </div>
                   <div className="flex-colum max-sm:py-3">
@@ -327,6 +343,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/facebook.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -334,6 +351,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/linked.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -341,6 +359,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/twitter.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                             <Divider orientation="vertical" />
@@ -348,6 +367,7 @@ const Team = () => {
                               <img
                                 className="phoneimg"
                                 src={"assets/img/instagram.png"}
+                                alt="Desarrollo Web con sibartech"
                               ></img>
                             </div>
                           </div>
