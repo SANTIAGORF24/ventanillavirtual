@@ -31,9 +31,9 @@ const NewContactBanner = () => {
     <div className="px-3 sm:flex items-center justify-center max-w-full pb-10">
       <div className="sm:flex items-center justify-between w-4/5">
         <div>
-          <p>Inovamos en cada</p>
-          <h4 className="font-bold text-xl">Línea de código</h4>
-          <p>Soportamos en cada desafio</p>
+          <h2 className="">Inovamos en cada</h2>
+          <h2 className="font-bold text-xl">Línea de código</h2>
+          <h2>Soportamos en cada desafio</h2>
         </div>
         <div className="py-3 sm:flex justify-between items-center sm:w-3/6 ">
           <div>
@@ -52,9 +52,9 @@ const NewContactBanner = () => {
           <div>
             <div className="max-w-md max-sm:py-5">
               <div className="space-y-1">
-                <h4 className="text-lg font-medium">Social Media</h4>
+                <h2 className="text-lg font-medium">Redes Sociales</h2>
                 <p className="text-sm ">
-                  No dudes en segirnos en nuestras redes
+                  No dudes en seguirnos en nuestras redes
                 </p>
               </div>
               <Divider className="my-4" />
