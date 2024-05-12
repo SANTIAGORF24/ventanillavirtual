@@ -52,10 +52,11 @@ const NewBanner = () => {
             <h1 className="Newbanner text-3xl font-extrabold sm:text-6xl mb-5">
               Desarrollo Web con SIBARTECH
             </h1>
-            <h3 className="text-md sm:text-xl">
+            <h2 className="text-md sm:text-xl">
               Programamos soluciones y creamos experiencias digitales únicas.
-            </h3>
+            </h2>
           </div>
+
           <form
             onSubmit={handleSubmit}
             className="pt-7 flex flex-col sm:flex-row items-center"
