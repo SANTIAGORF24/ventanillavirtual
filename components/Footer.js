@@ -15,16 +15,6 @@ const Footer = () => {
     <div className="w-full h-full bg-[#005BC4] flex sm:justify-center py-6 max-sm:px-12">
       <div className="w-4/5 flex flex-col items-center gap-6 max-sm:w-full">
         <div className="w-full flex gap-4 justify-center items-center">
-          <div className="w-[50px]">
-            <Image
-              src="/assets/img/Interno/logo.png"
-              width={70}
-              height={70}
-              alt="img"
-              className="w-full h-full object-contain brightness-200"
-            />
-          </div>
-
           <p className="font-bold text-white text-xl">SIBARTECH</p>
         </div>
         <div className="flex gap-4 max-sm:w-full max-sm:grid max-sm:grid-cols-2 max-sm:gap-y-8 max-sm:gap-x-20 max-sm:px-10">
