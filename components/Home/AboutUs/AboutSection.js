@@ -112,6 +112,7 @@ function AboutSection({ slides }) {
                       <div>
                         <img
                           width={600}
+                          height={50} // Ajusta la altura según sea necesario
                           alt="Desarrollo Web por Sibartech"
                           src={slide.src}
                         />

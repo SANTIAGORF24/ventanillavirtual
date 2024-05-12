@@ -49,6 +49,8 @@ const Team = () => {
                       className="max-w-64 rounded-md"
                       src="./assets/img/Team/ramirez.jpg"
                       alt="Desarrollador de sibartech"
+                      width="auto"
+                      height="auto"
                     />
                   </div>
                   <div className="flex-colum max-sm:py-3">
@@ -131,6 +133,8 @@ const Team = () => {
                       className="max-w-64 rounded-md"
                       src="assets/img/Team/mac.jpg"
                       alt="Desarrollador de sibartech"
+                      width="auto"
+                      height="auto"
                     />
                   </div>
                   <div className="flex-colum max-sm:py-3">
@@ -217,6 +221,8 @@ const Team = () => {
                       className="max-w-64 rounded-md"
                       src="assets/img/Team/Foto_Sebastian.jpg"
                       alt="Desarrollador de sibartech"
+                      width="auto"
+                      height="auto"
                     />
                   </div>
                   <div className="flex-colum max-sm:py-3">
@@ -299,6 +305,8 @@ const Team = () => {
                       className="max-w-64 rounded-md"
                       src="assets/img/Team/Foto_Charles.jpg"
                       alt="Desarrollador de sibartech"
+                      width="auto"
+                      height="auto"
                     />
                   </div>
                   <div className="flex-colum max-sm:py-3">
