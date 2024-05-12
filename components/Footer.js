@@ -18,8 +18,8 @@ const Footer = () => {
           <div className="w-[50px]">
             <Image
               src="/assets/img/logo.png"
-              width={100}
-              height={100}
+              width={70}
+              height={70}
               alt="img"
               className="w-full h-full object-contain brightness-200"
             />
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         <div>
           <p className="text-white max-sm:px-5">
-            ©2024 Todos los derechos reservados. Sibartech.
+            ©2024 Todos los derechos reservados. Sibartech. xd
           </p>
         </div>
       </div>
