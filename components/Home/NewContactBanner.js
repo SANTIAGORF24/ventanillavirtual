@@ -4,7 +4,7 @@ import { Divider } from "@nextui-org/react";
 const ContactInfo = ({ icon, text }) => (
   <div className="space-y-1 flex items-center">
     <img className="phoneimg" src={icon} alt="Icono de contacto" />
-    <p className="text-small text-default-400 px-3">{text}</p>
+    <p className="text-small px-3">{text}</p>
   </div>
 );
 
@@ -23,9 +23,9 @@ const NewContactBanner = () => {
           <h4 className="font-bold text-xl">Línea de código</h4>
           <p>Soportamos en cada desafio</p>
         </div>
-        <div className="py-3 sm:flex justify-between items-center sm:w-3/6">
+        <div className="py-3 sm:flex justify-between items-center sm:w-3/6 ">
           <div>
-            <div className="max-w-md">
+            <div className="max-w-md ">
               <ContactInfo
                 icon={"assets/img/Contact/phone.jpg"}
                 text={"+57 3154852832"}
@@ -41,7 +41,7 @@ const NewContactBanner = () => {
             <div className="max-w-md max-sm:py-5">
               <div className="space-y-1">
                 <h4 className="text-lg font-medium">Social Media</h4>
-                <p className="text-sm text-default-400">
+                <p className="text-sm ">
                   No dudes en segirnos en nuestras redes
                 </p>
               </div>

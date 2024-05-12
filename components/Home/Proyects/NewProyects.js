@@ -12,10 +12,7 @@ const ProjectCard = ({ title, price, description, offer }) => {
       <h3 className="text-xl md:text-3xl font-bold mb-4">{title}</h3>
       <p className="text-gray-500 text-lg md:text-3xl mb-4">{price}</p>
       <p className="mb-4">{description}</p>
-      <Button
-        className="w-full bg-blue-200 text-gray-500 mb-4"
-        onClick={handleButtonClick}
-      >
+      <Button className="w-full bg-blue-200 mb-4" onClick={handleButtonClick}>
         Empezar
       </Button>
       <h4 className="font-semibold mb-2">Qué ofrecemos para {title}:</h4>
