@@ -1,6 +1,19 @@
 import React from "react";
 import { Divider } from "@nextui-org/react";
 
+const ContactInfo = ({ icon, text }) => (
+  <div className="space-y-1 flex items-center">
+    <img className="phoneimg" src={icon} alt="Icono de contacto" />
+    <p className="text-small text-default-400 px-3">{text}</p>
+  </div>
+);
+
+const SocialMediaIcon = ({ icon }) => (
+  <div>
+    <img className="phoneimg" src={icon} alt="Icono de red social" />
+  </div>
+);
+
 const NewContactBanner = () => {
   return (
     <div className="px-3 sm:flex items-center justify-center max-w-full pb-10">
@@ -13,19 +26,15 @@ const NewContactBanner = () => {
         <div className="py-3 sm:flex justify-between items-center sm:w-3/6">
           <div>
             <div className="max-w-md">
-              <div className="space-y-1 flex items-center">
-                <img className="phoneimg" src={"assets/img/phone.png"}></img>
-                <p className="text-small text-default-400 px-3">
-                  +57 3154852832
-                </p>
-              </div>
+              <ContactInfo
+                icon={"assets/img/phone.png"}
+                text={"+57 3154852832"}
+              />
               <Divider className="my-4 " />
-              <div className="space-y-2 flex items-center">
-                <img className="phoneimg" src={"assets/img/mail.png"}></img>
-                <p className="text-small text-default-400 px-3">
-                  sibartech@gmail.com
-                </p>
-              </div>
+              <ContactInfo
+                icon={"assets/img/mail.png"}
+                text={"sibartech@gmail.com"}
+              />
             </div>
           </div>
           <div>
@@ -38,30 +47,13 @@ const NewContactBanner = () => {
               </div>
               <Divider className="my-4" />
               <div className="flex h-5 items-center space-x-4 text-small max-sm:space-x-9">
-                <div>
-                  <img
-                    className="phoneimg"
-                    src={"assets/img/facebook.png"}
-                  ></img>
-                </div>
+                <SocialMediaIcon icon={"assets/img/facebook.png"} />
                 <Divider orientation="vertical" />
-                <div>
-                  <img className="phoneimg" src={"assets/img/linked.png"}></img>
-                </div>
+                <SocialMediaIcon icon={"assets/img/linked.png"} />
                 <Divider orientation="vertical" />
-                <div>
-                  <img
-                    className="phoneimg"
-                    src={"assets/img/twitter.png"}
-                  ></img>
-                </div>
+                <SocialMediaIcon icon={"assets/img/twitter.png"} />
                 <Divider orientation="vertical" />
-                <div>
-                  <img
-                    className="phoneimg"
-                    src={"assets/img/instagram.png"}
-                  ></img>
-                </div>
+                <SocialMediaIcon icon={"assets/img/instagram.png"} />
               </div>
             </div>
           </div>
