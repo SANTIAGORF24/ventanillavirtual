@@ -2,7 +2,7 @@
 import React from "react";
 import { Button } from "@nextui-org/react";
 
-const ProjectCard = ({ title, price, description, buttonText }) => {
+const ProjectCard = ({ title, price, description, offer }) => {
   const handleButtonClick = () => {
     window.open("https://wa.me/573154852832", "_blank");
   };
@@ -16,15 +16,13 @@ const ProjectCard = ({ title, price, description, buttonText }) => {
         className="w-full bg-blue-200 text-gray-500 mb-4"
         onClick={handleButtonClick}
       >
-        {buttonText}
+        Empezar
       </Button>
       <h4 className="font-semibold mb-2">Qué ofrecemos:</h4>
       <ul className="text-sm">
-        <li>Desarrollo de diseño personalizado</li>
-        <li>Integración de funcionalidades específicas</li>
-        <li>Optimización avanzada para SEO</li>
-        <li>Integración de sistemas de pago</li>
-        <li>Soporte técnico continuo</li>
+        {offer.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
       </ul>
     </div>
   );
@@ -48,19 +46,35 @@ const NewProjects = () => {
             title="Landing en WordPress"
             price="$400 USD"
             description="¿Necesitas una presencia en línea efectiva y atractiva para tu negocio? Nuestro servicio de creación de landings en WordPress es la solución ideal. Con una combinación de diseño personalizado, funcionalidad potente y optimización para motores de búsqueda, te ayudaremos a destacar en la web y atraer a tus clientes potenciales."
-            buttonText="Empezar"
+            offer={[
+              "Desarrollo de diseño personalizado",
+              "Integración de plugins esenciales",
+              "Optimización para SEO",
+            ]}
           />
           <ProjectCard
             title="Desarrollo de Aplicaciones Personalizado"
             price="Cotizar"
             description="¿Necesitas una aplicación que se adapte perfectamente a las necesidades específicas de tu negocio? Nuestro servicio de desarrollo de aplicaciones personalizado es la solución ideal. Con una combinación de diseño, desarrollo y pruebas rigurosas, creamos aplicaciones robustas y funcionales que potencian tu negocio y proporcionan una experiencia óptima para tus usuarios."
-            buttonText="Cotizar"
+            offer={[
+              "Análisis de requisitos y consultoría",
+              "Diseño de interfaz de usuario personalizada",
+              "Desarrollo de funcionalidades a medida",
+              "Pruebas de calidad y rendimiento",
+              "Soporte continuo y mantenimiento",
+            ]}
           />
           <ProjectCard
             title="Landing a Código"
             price="$600 - $1000 USD"
             description="¿Buscas llevar tu presencia en línea al siguiente nivel con una landing totalmente personalizada y única? Nuestro servicio de Landing a Código ofrece soluciones a medida para tu negocio. Con una combinación de diseño personalizado, funcionalidad potente y optimización para motores de búsqueda, te ayudaremos a destacar en la web y atraer a tus clientes potenciales."
-            buttonText="Empezar"
+            offer={[
+              "Desarrollo de diseño personalizado",
+              "Integración de funcionalidades específicas",
+              "Optimización avanzada para SEO",
+              "Integración de sistemas de pago",
+              "Soporte técnico continuo",
+            ]}
           />
         </div>
       </div>
