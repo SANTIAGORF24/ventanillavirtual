@@ -1,16 +1,21 @@
-// CardComponent.js
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Card,
   CardHeader,
   CardBody,
   CardFooter,
   Divider,
-  Link,
   Image,
 } from "@nextui-org/react";
+import Link from "next/link";
 
 function CardComponent({ title, subtitle, body, footer }) {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
     <Card className="max-w-[400px] mx-auto">
       <CardHeader className="flex gap-3 items-center">
@@ -18,7 +23,7 @@ function CardComponent({ title, subtitle, body, footer }) {
           alt="nextui logo"
           height={40}
           radius="sm"
-          src="/assets/img/logo.webp"
+          src="/assets/img/Interno/logo.webp"
           width={40}
         />
         <div className="flex flex-col">
@@ -32,9 +37,16 @@ function CardComponent({ title, subtitle, body, footer }) {
       </CardBody>
       <Divider />
       <CardFooter>
-        <Link href="#" color="primary" underline="hover">
-          {footer}
-        </Link>
+        {isMounted ? (
+          <Link
+            href="/contacto"
+            color="primary"
+            underline="hover"
+            legacyBehavior
+          >
+            {footer}
+          </Link>
+        ) : null}
       </CardFooter>
     </Card>
   );
