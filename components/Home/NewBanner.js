@@ -47,9 +47,9 @@ const NewBanner = () => {
       className="px-3 sm:flex items-center justify-center max-w-full py-10"
     >
       <div className="sm:flex items-center space-x-6 w-full sm:w-4/5">
-        <div>
+        <div className="w-3/6">
           <div>
-            <h1 className="Newbanner text-4xl font-extrabold sm:text-6xl">
+            <h1 className="Newbanner text-4xl font-extrabold sm:text-6xl mb-5">
               Desarrollo Web con SIBARTECH
             </h1>
             <h3 className="text-md sm:text-xl">
@@ -83,8 +83,8 @@ const NewBanner = () => {
         </div>
         <div className="hidden sm:flex max-sm:py-5 pl-40">
           <Image
-            width={500}
-            height={500}
+            width={400}
+            height={400}
             alt="Desarrollo Web con SIBARTECH"
             src="assets/img/logo.png"
             className="mx-auto"
