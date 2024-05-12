@@ -47,7 +47,7 @@ const Team = () => {
                   <div className="flex justify-center">
                     <img
                       className="max-w-64 rounded-md"
-                      src="./assets/img/Team/ramirez.jpg"
+                      src="./assets/img/Team/ramirez.webp"
                       alt="Desarrollador de sibartech"
                       width="auto"
                       height="auto"
@@ -87,7 +87,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/facebook.jpg"}
+                                src={"assets/img/Contact/facebook.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}
@@ -97,7 +97,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/linked.jpg"}
+                                src={"assets/img/Contact/linked.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}
@@ -107,7 +107,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/twitter.jpg"}
+                                src={"assets/img/Contact/twitter.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}
@@ -117,7 +117,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/instagram.jpg"}
+                                src={"assets/img/Contact/instagram.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}
@@ -139,7 +139,7 @@ const Team = () => {
                   <div className="flex justify-center items-center">
                     <img
                       className="max-w-64 rounded-md"
-                      src="assets/img/Team/mac.jpg"
+                      src="assets/img/Team/mac.webp"
                       alt="Desarrollador de sibartech"
                       width="auto"
                       height="auto"
@@ -183,7 +183,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/facebook.jpg"}
+                                src={"assets/img/Contact/facebook.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}
@@ -193,7 +193,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/linked.jpg"}
+                                src={"assets/img/Contact/linked.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}
@@ -203,7 +203,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/twitter.jpg"}
+                                src={"assets/img/Contact/twitter.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}
@@ -213,7 +213,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/instagram.jpg"}
+                                src={"assets/img/Contact/instagram.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}
@@ -235,7 +235,7 @@ const Team = () => {
                   <div className="flex justify-center items-center">
                     <img
                       className="max-w-64 rounded-md"
-                      src="assets/img/Team/Foto_Sebastian.jpg"
+                      src="assets/img/Team/Foto_Sebastian.webp"
                       alt="Desarrollador de sibartech"
                       width="auto"
                       height="auto"
@@ -275,7 +275,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/facebook.jpg"}
+                                src={"assets/img/Contact/facebook.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}
@@ -285,7 +285,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/linked.jpg"}
+                                src={"assets/img/Contact/linked.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}
@@ -295,7 +295,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/twitter.jpg"}
+                                src={"assets/img/Contact/twitter.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}
@@ -305,7 +305,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/instagram.jpg"}
+                                src={"assets/img/Contact/instagram.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}
@@ -327,7 +327,7 @@ const Team = () => {
                   <div className="flex justify-center items-center">
                     <img
                       className="max-w-64 rounded-md"
-                      src="assets/img/Team/Foto_Charles.jpg"
+                      src="assets/img/Team/Foto_Charles.webp"
                       alt="Desarrollador de sibartech"
                       width="auto"
                       height="auto"
@@ -374,7 +374,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/facebook.jpg"}
+                                src={"assets/img/Contact/facebook.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}
@@ -384,7 +384,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/linked.jpg"}
+                                src={"assets/img/Contact/linked.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}
@@ -394,7 +394,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/twitter.jpg"}
+                                src={"assets/img/Contact/twitter.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}
@@ -404,7 +404,7 @@ const Team = () => {
                             <div>
                               <img
                                 className="phoneimg"
-                                src={"assets/img/Contact/instagram.jpg"}
+                                src={"assets/img/Contact/instagram.webp"}
                                 alt="Desarrollo Web con sibartech"
                                 width={24}
                                 height={24}

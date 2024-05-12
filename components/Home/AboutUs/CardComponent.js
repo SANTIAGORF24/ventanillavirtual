@@ -18,7 +18,7 @@ function CardComponent({ title, subtitle, body, footer }) {
           alt="nextui logo"
           height={40}
           radius="sm"
-          src="/assets/img/logo.jpg"
+          src="/assets/img/logo.webp"
           width={40}
         />
         <div className="flex flex-col">

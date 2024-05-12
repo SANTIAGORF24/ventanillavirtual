@@ -1,7 +1,7 @@
 import React from "react";
 export const AcmeLogo = () => (
   <img
-    src="/assets/img/Interno/logo.jpg"
+    src="/assets/img/Interno/logo.webp"
     className="w-14"
     alt="Desarrollo Web con sibartech"
     width={100} // Ajusta el ancho según sea necesario
