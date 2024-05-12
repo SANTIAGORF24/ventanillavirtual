@@ -1,7 +1,6 @@
 "use client";
-
-import { Inter } from "next/font/google";
 import Head from "next/head";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 import { NewNav } from "@/components/NewNav";
