@@ -39,7 +39,7 @@ function AboutSection({ slides }) {
                 title="Sobre Nosotros"
                 subtitle="Transformando Ideas en Realidad"
                 body="En Sibartech, nos apasiona la creación y el desarrollo de soluciones innovadoras a través de la programación. Somos una empresa líder en el campo de la tecnología, especializada en el diseño, desarrollo y mantenimiento de proyectos a medida. Nuestra misión es simple pero poderosa: transformar tus ideas en realidades digitales que superen tus expectativas."
-                footer={<a href="/contacto">Puedes contactarnos</a>}
+                footer={<a href="#contacto">Puedes contactarnos</a>}
               />
             </div>
             <div className="mb-8 lg:mb-0 lg:w-1/3">
