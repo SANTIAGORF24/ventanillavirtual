@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -16,6 +15,7 @@ const WhatsAppButton = () => {
     <button
       className="fixed bottom-4 right-4 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white shadow-md hover:bg-green-600 focus:outline-none"
       onClick={handleClick}
+      aria-label="Enviar mensaje por WhatsApp"
     >
       <FontAwesomeIcon icon={faWhatsapp} className="w-full" />
     </button>
