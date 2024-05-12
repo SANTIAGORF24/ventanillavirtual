@@ -18,7 +18,7 @@ const ProjectCard = ({ title, price, description, offer }) => {
       >
         Empezar
       </Button>
-      <h4 className="font-semibold mb-2">Qué ofrecemos:</h4>
+      <h4 className="font-semibold mb-2">Qué ofrecemos para {title}:</h4>
       <ul className="text-sm">
         {offer.map((item, index) => (
           <li key={index}>{item}</li>
@@ -37,9 +37,10 @@ const NewProjects = () => {
             id="cotizar"
             className="font-extrabold text-3xl md:text-5xl text-center"
           >
-            Toma la decisión acertada para tu negocio
+            Desarrollo Web con Sibartech: Toma la decisión acertada para tu
+            negocio
           </h2>
-          <p>Elija uno de nuestros productos asequibles</p>
+          <p>Elija uno de nuestros productos asequibles de desarrollo web</p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center w-full py-10 space-y-10 md:space-y-0 md:space-x-10 ">
           <ProjectCard
