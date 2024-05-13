@@ -6,10 +6,12 @@ import ContactUs from "@/components/Home/ContactUs/ContactUs";
 import Clientes from "@/components/Home/Clientes/Clientes";
 import WhatsAppButton from "@/components/Home/WhatsAppButton/WhatsAppButton";
 import AboutSectionWithCards from "@/components/Home/AboutUs/AboutSectionWithCards";
+import Index from "@/components/Index";
 
 export default function Home() {
   return (
     <>
+      <Index />
       <NewBanner />
       <NewContactBanner />
       <AboutSectionWithCards />
