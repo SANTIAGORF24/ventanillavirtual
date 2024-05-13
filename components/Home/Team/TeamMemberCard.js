@@ -11,6 +11,8 @@ const TeamMemberCard = ({ name, role, imageSrc, description }) => {
             className="max-w-64 rounded-md"
             src={imageSrc}
             alt={`Desarrollador ${name}`}
+            width={400} // Ancho deseado
+            height={400} // Altura deseada
           />
         </div>
         <div className="flex-colum max-sm:py-3">
