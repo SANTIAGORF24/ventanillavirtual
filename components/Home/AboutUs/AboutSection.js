@@ -70,7 +70,7 @@ function AboutSection({ slides }) {
                       <div>
                         <img
                           width={600}
-                          height={50}
+                          height={600}
                           alt="Desarrollo Web por Sibartech"
                           src={slide.src}
                         />
