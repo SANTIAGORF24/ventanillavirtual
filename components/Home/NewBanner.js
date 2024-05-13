@@ -49,7 +49,7 @@ const NewBanner = () => {
       <div className="sm:flex items-center space-x-6 w-full sm:w-4/5">
         <div className="sm:w-3/6 w-full">
           <div>
-            <h1 className="Newbanner text-3xl font-extrabold sm:text-6xl mb-5">
+            <h1 className="Newbanner text-xl font-extrabold sm:text-6xl mb-5">
               Desarrollo Web con SIBARTECH
             </h1>
             <h2 className="text-md sm:text-xl">
