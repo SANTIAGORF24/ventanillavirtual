@@ -69,8 +69,8 @@ function AboutSection({ slides }) {
                     <SwiperSlide key={index} className={slideClasses}>
                       <div>
                         <img
-                          width={600}
-                          height={600}
+                          width={300}
+                          height={300}
                           alt="Desarrollo Web por Sibartech"
                           src={slide.src}
                         />
