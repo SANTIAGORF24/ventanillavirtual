@@ -88,6 +88,7 @@ const NewBanner = () => {
             height={400}
             alt="Desarrollo Web con sibartech"
             src="assets/img/Interno/logo.webp"
+            loading="lazy" // Lazy Loading
             className="mx-auto"
           />
         </div>
