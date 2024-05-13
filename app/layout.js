@@ -16,7 +16,6 @@ export default function RootLayout({ children }) {
           name="description"
           content="Sitio web de Sibartech, una empresa especializada en desarrollo web profesional. Ofrecemos soluciones innovadoras y personalizadas para tus necesidades en línea."
         />
-        <link rel="icon" href="/assets/img/Interno/logo.webp" />
       </head>
       <body className={`scroll-smooth ${inter.className}`}>
         <NextUIProvider>
