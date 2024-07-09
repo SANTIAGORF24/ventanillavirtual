@@ -14,11 +14,8 @@ import {
 import { AcmeLogo } from "./AcmeLogo.jsx";
 
 const menuItems = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Acerca de", href: "#acerca" },
-  { label: "Cotizar", href: "#cotizar" },
-  { label: "Clientes", href: "#clientes" },
-  { label: "Equipo", href: "#equipo" },
+  { label: "como comenzo", href: "#inicio" },
+  { label: "galeria de recuerdos", href: "#cotizar" },
 ];
 
 export function NewNav() {
@@ -43,7 +40,7 @@ export function NewNav() {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {menuItems.map((item, index) => (
           <NavbarItem key={index}>
-            <Link color="foreground" href={item.href}>
+            <Link color="foreground" href={item.href} className=" px-10">
               {item.label}
             </Link>
           </NavbarItem>
@@ -53,11 +50,11 @@ export function NewNav() {
         <NavbarItem>
           <Button
             as={Link}
-            className="bg-blue-600 text-white"
-            href="#contacto"
+            className="bg-violet-800 text-white"
+            href="#clientes"
             variant="flat"
           >
-            Contactanos
+            cupones
           </Button>
         </NavbarItem>
       </NavbarContent>

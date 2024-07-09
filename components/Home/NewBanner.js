@@ -46,48 +46,26 @@ const NewBanner = () => {
       id="inicio"
       className="px-3 sm:flex items-center justify-center max-w-full py-10"
     >
-      <div className="sm:flex items-center space-x-6 w-full sm:w-4/5">
+      <div className="sm:flex items-center flex-col sm:flex-row space-x-6 w-full sm:w-4/5">
         <div className="sm:w-3/6 w-full">
           <div>
             <h1 className="Newbanner text-xl font-extrabold sm:text-6xl mb-5">
-              Desarrollo Web con SIBARTECH
+              FELICES DOS MESES
             </h1>
             <h2 className="text-md sm:text-xl">
-              Programamos soluciones y creamos experiencias digitales únicas.
+              Enamorándonos más cada día: Dos meses de pura magia.{" "}
+            </h2>
+            <h2 className="text-md sm:text-xl pt-10">
+              Con este holiii comenzo todo xd
             </h2>
           </div>
-
-          <form
-            onSubmit={handleSubmit}
-            className="pt-7 flex flex-col sm:flex-row items-center"
-          >
-            <Input
-              type="email"
-              label="Email"
-              variant="bordered"
-              className="h-12 mb-2 sm:mr-2 sm:mb-0"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              name="from_email"
-              disabled={isSubmitting}
-            />
-            <Button
-              type="submit"
-              className="buton h-12"
-              color="primary"
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? "Enviando..." : "Contactanos"}
-            </Button>
-            {submitError && <p className="text-red-500">{submitError}</p>}
-          </form>
         </div>
-        <div className="hidden sm:flex max-sm:py-5 pl-40">
+        <div className="flex justify-center w-full sm:w-auto pt-5 sm:pt-0">
           <Image
-            width={400}
-            height={400}
+            width={600}
+            height={600}
             alt="Desarrollo Web con sibartech"
-            src="assets/img/Interno/logo.webp"
+            src="assets/img/Interno/inicio.jpeg"
             loading="lazy" // Lazy Loading
             className="mx-auto"
           />

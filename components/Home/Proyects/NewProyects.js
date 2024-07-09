@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { Button } from "@nextui-org/react";
+import { Button, Accordion, AccordionItem } from "@nextui-org/react";
+import Image from "next/image";
 
 const ProjectCard = ({ title, price, description, offer }) => {
   const handleButtonClick = () => {
@@ -34,46 +35,52 @@ const NewProjects = () => {
             id="cotizar"
             className="font-extrabold text-3xl md:text-5xl text-center"
           >
-            Desarrollo Web con Sibartech: Toma la decisión acertada para tu
-            negocio
+            MOMENTOS INOLVIDABLES CONTIGO
           </h2>
-          <p>Elija uno de nuestros productos asequibles de desarrollo web</p>
+          <p>Cada momento a tu lado me llena de felicidad el alma</p>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center w-full py-10 space-y-10 md:space-y-0 md:space-x-10 ">
-          <ProjectCard
-            title="Landing en WordPress"
-            price="$400 USD"
-            description="¿Necesitas una presencia en línea efectiva y atractiva para tu negocio? Nuestro servicio de creación de landings en WordPress es la solución ideal. Con una combinación de diseño personalizado, funcionalidad potente y optimización para motores de búsqueda, te ayudaremos a destacar en la web y atraer a tus clientes potenciales."
-            offer={[
-              "Desarrollo de diseño personalizado",
-              "Integración de plugins esenciales",
-              "Optimización para SEO",
-            ]}
-          />
-          <ProjectCard
-            title="Desarrollo de Aplicaciones Personalizado"
-            price="Cotizar"
-            description="¿Necesitas una aplicación que se adapte perfectamente a las necesidades específicas de tu negocio? Nuestro servicio de desarrollo de aplicaciones personalizado es la solución ideal. Con una combinación de diseño, desarrollo y pruebas rigurosas, creamos aplicaciones robustas y funcionales que potencian tu negocio y proporcionan una experiencia óptima para tus usuarios."
-            offer={[
-              "Análisis de requisitos y consultoría",
-              "Diseño de interfaz de usuario personalizada",
-              "Desarrollo de funcionalidades a medida",
-              "Pruebas de calidad y rendimiento",
-              "Soporte continuo y mantenimiento",
-            ]}
-          />
-          <ProjectCard
-            title="Landing a Código"
-            price="$600 - $1000 USD"
-            description="¿Buscas llevar tu presencia en línea al siguiente nivel con una landing totalmente personalizada y única? Nuestro servicio de Landing a Código ofrece soluciones a medida para tu negocio. Con una combinación de diseño personalizado, funcionalidad potente y optimización para motores de búsqueda, te ayudaremos a destacar en la web y atraer a tus clientes potenciales."
-            offer={[
-              "Desarrollo de diseño personalizado",
-              "Integración de funcionalidades específicas",
-              "Optimización avanzada para SEO",
-              "Integración de sistemas de pago",
-              "Soporte técnico continuo",
-            ]}
-          />
+        <div className="flex flex-col md:flex-row justify-center items-center w-full py-10 space-y-10 md:space-y-0 md:space-x-10">
+          <Accordion>
+            <AccordionItem title="Primer prueblito">
+              <Image
+                src="/assets/img/horizontal/v1.jpeg"
+                alt="Primer prueblito"
+                width={600}
+                height={400}
+              />
+              <p className="text-black">
+                Fue muy lindo visitar el primer pueblito juntos. Disfruté mucho
+                el día paseando contigo y conociendo Tabio, compartiendo estos
+                momentos con mi familia. ¡Uno de muchos más por descubrir!
+              </p>
+            </AccordionItem>
+            <AccordionItem title="Primer te amo">
+              <Image
+                src="/assets/img/horizontal/v2.jpeg"
+                alt="Primer te amo"
+                width={600}
+                height={400}
+              />
+              <p className="text-black">
+                Es imposible olvidar la primera vez que te dije que te amaba.
+                Fue un momento muy especial y sincero, porque realmente lo
+                sentía y simplemente me nació decírtelo.
+              </p>
+            </AccordionItem>
+            <AccordionItem title="Primera vez en el gym juntos">
+              <Image
+                src="/assets/img/horizontal/v3.jpeg"
+                alt="Primera vez en el gym juntos"
+                width={600}
+                height={400}
+              />
+              <p className="text-black">
+                Adoro cuando vamos al gym juntos. Me alegra mucho que compartas
+                conmigo mi hobby y me hace muy feliz cuando me acompañas y
+                compartimos momentos divertidos entrenando.
+              </p>
+            </AccordionItem>
+          </Accordion>
         </div>
       </div>
     </div>
