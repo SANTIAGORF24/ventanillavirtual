@@ -1,17 +1,40 @@
-import NewBanner from "@/components/Home/NewBanner";
-import NewProyects from "@/components/Home/Proyects/NewProyects";
-import Team from "@/components/Home/Team/Team";
-import ContactUs from "@/components/Home/ContactUs/ContactUs";
-import Clientes from "@/components/Home/Clientes/Clientes";
-import AboutSectionWithCards from "@/components/Home/AboutUs/AboutSectionWithCards";
+"use client";
+import React, { useState } from "react";
+import { ConsultForm } from "@/components/Home/ConsultForm";
+import { NewBanner } from "@/components/Home/NewBanner";
+import { RegisterPetitionForm } from "@/components/Home/RegisterPetitionForm";
+import { Tramites } from "@/components/Home/tramites";
+import { Opas } from "@/components/Home/opas";
+import { Consultas } from "@/components/Home/Consultas";
+import { Denuncias } from "@/components/Home/Denuncias";
+import { Solicitudes } from "@/components/Home/Solicitudes";
 
 export default function Home() {
+  const [activeForm, setActiveForm] = useState(null);
+
+  const handleFormChange = (formName) => {
+    setActiveForm(activeForm === formName ? null : formName);
+  };
+
   return (
     <>
-      <NewBanner />
-      <AboutSectionWithCards />
-      <NewProyects />
-      <Clientes />
+      <NewBanner
+        onConsultClick={() => handleFormChange("consult")}
+        onRegisterClick={() => handleFormChange("register")}
+        onPqrsClick={() => handleFormChange("pqrs")}
+        onTramitesClick={() => handleFormChange("tramites")}
+        onOpasClick={() => handleFormChange("opas")}
+        onConsultasClick={() => handleFormChange("consultas")}
+        onDenunciasClick={() => handleFormChange("denuncias")}
+        onSolicitudesClick={() => handleFormChange("solicitudes")}
+      />
+      {activeForm === "consult" && <ConsultForm />}
+      {activeForm === "pqrs" && <RegisterPetitionForm />}
+      {activeForm === "tramites" && <Tramites />}
+      {activeForm === "opas" && <Opas />}
+      {activeForm === "consultas" && <Consultas />}
+      {activeForm === "denuncias" && <Denuncias />}
+      {activeForm === "solicitudes" && <Solicitudes />}
     </>
   );
 }

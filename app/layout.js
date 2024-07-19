@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>FELICES DOS MESES</title>
+        <title>Ventanilla virtual Ministerio del deporte</title>
         <meta
           name="description"
           content="Sitio web de Sibartech, una empresa especializada en desarrollo web profesional. Ofrecemos soluciones innovadoras y personalizadas para tus necesidades en línea."

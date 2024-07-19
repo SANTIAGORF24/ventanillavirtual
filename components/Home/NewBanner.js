@@ -1,78 +1,233 @@
-"use client";
-import React, { useState } from "react";
-import { Button, Input, Image } from "@nextui-org/react";
-import emailjs from "emailjs-com";
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
-const NewBanner = () => {
-  const [email, setEmail] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitError, setSubmitError] = useState(null);
+export function NewBanner({
+  onConsultClick,
+  onRegisterClick,
+  onPqrsClick,
+  onTramitesClick,
+  onOpasClick,
+  onConsultasClick,
+  onDenunciasClick,
+  onSolicitudesClick,
+}) {
+  const [showSubButtons, setShowSubButtons] = useState(false);
+  const [activeButton, setActiveButton] = useState(null);
+  const [selectedOption, setSelectedOption] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitError(null);
+  useEffect(() => {
+    setActiveButton(null);
+    setShowSubButtons(false);
+  }, []);
 
-    const templateParamsToUser = { to_email: email };
-    const templateParamsToSibartech = { from_email: email };
+  const handleRegisterClick = () => {
+    setShowSubButtons(!showSubButtons);
+    if (onRegisterClick) onRegisterClick();
+    setActiveButton("register");
+  };
 
-    try {
-      // Send email to SIBARTECH
-      await emailjs.sendForm(
-        "service_2akmeui",
-        "template_wbj7c5o",
-        e.target,
-        "eY3p1SSZJisXlHKqw",
-        templateParamsToSibartech
-      );
+  const handleConsultClick = () => {
+    setShowSubButtons(false);
+    if (onConsultClick) onConsultClick();
+    setActiveButton("consult");
+  };
 
-      // Send email to the user
-      await emailjs.send(
-        "service_2akmeui",
-        "template_rqppcj1",
-        templateParamsToUser,
-        "eY3p1SSZJisXlHKqw"
-      );
-    } catch (error) {
-      setSubmitError("Error al enviar el correo electrónico");
-      console.error("Error al enviar el correo electrónico:", error);
-    } finally {
-      setIsSubmitting(false);
+  const handleSelectChange = (event) => {
+    const value = event.target.value;
+    setSelectedOption(value);
+
+    switch (value) {
+      case "tramites":
+        onTramitesClick && onTramitesClick();
+        break;
+      case "opas":
+        onOpasClick && onOpasClick();
+        break;
+      case "consultas":
+        onConsultasClick && onConsultasClick();
+        break;
+      case "denuncias":
+        onDenunciasClick && onDenunciasClick();
+        break;
+      case "solicitudes":
+        onSolicitudesClick && onSolicitudesClick();
+        break;
+      case "pqrs":
+        onPqrsClick && onPqrsClick();
+        break;
+      default:
+        break;
     }
   };
 
+  const buttonStyle = (isActive) => `
+    ${
+      isActive
+        ? "bg-white text-[#3367d6] border-[#3367d6] border-2"
+        : "bg-[#3367d6] text-white"
+    } 
+    text-lg font-bold py-4 px-6 rounded
+    transition-colors duration-300
+    ${
+      isActive
+        ? "hover:bg-white hover:text-[#3367d6] hover:border-[#3367d6]"
+        : "hover:bg-white hover:text-[#3367d6]"
+    }
+  `;
+
   return (
-    <div
-      id="inicio"
-      className="px-3 sm:flex items-center justify-center max-w-full py-10"
-    >
-      <div className="sm:flex items-center flex-col sm:flex-row space-x-6 w-full sm:w-4/5">
-        <div className="sm:w-3/6 w-full">
-          <div>
-            <h1 className="Newbanner text-xl font-extrabold sm:text-6xl mb-5">
-              FELICES DOS MESES
-            </h1>
-            <h2 className="text-md sm:text-xl">
-              Enamorándonos más cada día: Dos meses de pura magia.{" "}
-            </h2>
-            <h2 className="text-md sm:text-xl pt-10">
-              Con este holiii comenzo todo xd
-            </h2>
-          </div>
-        </div>
-        <div className="flex justify-center w-full sm:w-auto pt-5 sm:pt-0">
-          <Image
-            width={600}
-            height={600}
-            alt="Desarrollo Web con sibartech"
-            src="assets/img/Interno/inicio.jpeg"
-            loading="lazy" // Lazy Loading
-            className="mx-auto"
-          />
-        </div>
+    <div className="flex flex-col items-center">
+      <h1 className="text-[#3367d6] text-4xl font-bold text-center w-full py-4 mb-4">
+        Ventanilla Virtual
+        <br />
+        Ministerio del Deporte
+      </h1>
+      <div className="bg-gray-100 border border-gray-300 p-6 rounded-lg text-left text-sm w-4/6 shadow-md">
+        <p className="mb-4 leading-relaxed">
+          El{" "}
+          <span className="font-semibold text-[#3367d6]">
+            Ministerio del Deporte
+          </span>{" "}
+          pone a disposición de la ciudadanía el siguiente formulario
+          electrónico a través del cual podrá consultar o registrar sus{" "}
+          <span className="font-medium">
+            solicitudes, quejas, reclamos, sugerencias, felicitaciones o
+            denuncias
+          </span>{" "}
+          relacionadas con cualquier trámite o servicio dentro de nuestra
+          competencia.
+        </p>
+        <p className="mb-4 leading-relaxed">
+          Asegúrese de proporcionar toda la información necesaria para poder
+          atender su solicitud de manera efectiva.
+        </p>
+        <p className="leading-relaxed">
+          Los campos marcados con{" "}
+          <span className="text-red-500 font-bold">*</span> son{" "}
+          <span className="font-medium">obligatorios</span>. En caso de falla
+          del sistema, infórmelo y empiece el diligenciamiento nuevamente del
+          formulario en este punto.
+        </p>
       </div>
+
+      <div className="flex flex-col sm:flex-row justify-center items-center w-full py-8 space-y-4 sm:space-y-0 sm:space-x-4 px-4">
+        <button
+          onClick={handleConsultClick}
+          className={buttonStyle(activeButton === "consult")}
+        >
+          Consulte aquí sus solicitudes
+        </button>
+        <button
+          onClick={handleRegisterClick}
+          className={buttonStyle(activeButton === "register")}
+        >
+          Registre aquí su solicitud
+        </button>
+        <a
+          href="https://www.procuraduria.gov.co/PQRSDF/Pages/solicitud_informacion_identificacion_reservada.aspx"
+          className="inline-block w-full sm:w-1/3"
+        >
+          <button className={buttonStyle(activeButton === "requestInfo")}>
+            Solicitud de información con identificación reservada
+          </button>
+        </a>
+      </div>
+      {showSubButtons && (
+        <>
+          <div className="bg-gray-100 border border-gray-300 p-4 rounded-lg text-left text-sm w-4/6">
+            <h2 className="text-[#3367d6] text-lg font-bold">Información</h2>
+            <p>
+              El Ministerio del Deporte le informa que, al momento de enviar su
+              solicitud, usted está aceptando el manejo de sus datos personales,
+              el cual se realiza conforme a lo establecido en nuestra
+              <a href="#" className="text-[#3367d6] underline">
+                Política de Protección de Datos Personales
+              </a>
+              .
+            </p>
+            <p>
+              Si usted no tiene certeza sobre el tipo de petición a ingresar,
+              consulte el documento de ayuda
+              <a href="#" className="text-[#3367d6] underline">
+                aquí
+              </a>
+              .
+            </p>
+            <p>
+              Los campos marcados con * son obligatorios. En caso de falla del
+              sistema, infórmelo y empiece el diligenciamiento nuevamente del
+              formulario en este punto.
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-4/6 py-8 px-4">
+            <label
+              htmlFor="tipo-solicitud"
+              className="block text-[#3367d6] text-lg font-bold mb-2"
+            >
+              Tipo de solicitud
+              <span
+                className="relative inline-block ml-2 cursor-pointer"
+                onMouseEnter={(e) => {
+                  const tooltip = e.currentTarget.querySelector(".tooltip");
+                  if (tooltip) tooltip.style.display = "block";
+                }}
+                onMouseLeave={(e) => {
+                  const tooltip = e.currentTarget.querySelector(".tooltip");
+                  if (tooltip) tooltip.style.display = "none";
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 text-[#3367d6]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="16" x2="12" y2="12" />
+                  <line x1="12" y1="8" x2="12" y2="8" />
+                </svg>
+                <div
+                  className="tooltip absolute bg-gray-800 text-white text-xs rounded py-1 px-2"
+                  style={{
+                    display: "none",
+                    top: "100%",
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    marginTop: "5px",
+                    width: "1000px",
+                  }}
+                >
+                  Toda persona tiene derecho a presentar peticiones respetuosas
+                  a las autoridades por motivos de interés general o particular
+                  y a obtener pronta resolución de acuerdo a lo establecido en
+                  el Código de Procedimiento Administrativo y de lo Contencioso
+                  Administrativo, reglamentado por la Ley 1755 de 2015.
+                </div>
+              </span>
+            </label>
+            <select
+              id="tipo-solicitud"
+              value={selectedOption}
+              onChange={handleSelectChange}
+              className="block w-full p-2 border border-gray-300 rounded"
+            >
+              <option value="">Seleccione</option>
+              <option value="pqrs">Derecho de petición</option>
+              <option value="denuncias">Denuncias</option>
+              <option value="consultas">
+                Consultas de acceso a información pública
+              </option>
+              <option value="solicitudes">Solicitud de certificación</option>
+              <option value="tramites">Trámites</option>
+              <option value="opas">Servicios</option>
+            </select>
+          </div>
+        </>
+      )}
     </div>
   );
-};
-
-export default NewBanner;
+}
