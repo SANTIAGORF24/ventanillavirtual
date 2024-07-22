@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import { Tooltip } from "@nextui-org/react"; // Usando Tooltip de NextUI
+
 import Image from "next/image";
 
 export function Solicitudes() {
@@ -42,24 +44,39 @@ export function Solicitudes() {
         </select>
       </div>
       <div className="space-y-4">
-        <label htmlFor="descripcion" className="block text-gray-700">
-          Descripción
-        </label>
+        <div className="flex items-center">
+          <label htmlFor="descripcion" className="block text-gray-700">
+            Descripción
+          </label>
+          <Tooltip
+            content="Ingrese la descripción de su solicitud. Recuerde que su solicitud puede contener un máximo de 1500 caracteres."
+            placement="right"
+          >
+            <div className="relative flex items-center justify-center ml-2 w-8 h-8 bg-white text-blue-600 rounded-full cursor-pointer">
+              <svg
+                className="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 8v4m0 4h.01M12 4a8 8 0 100 16 8 8 0 000-16z"
+                />
+              </svg>
+            </div>
+          </Tooltip>
+        </div>
         <textarea
           id="descripcion"
           className="block w-full p-2 border border-gray-300 rounded"
           maxLength="1500"
           placeholder="Su solicitud puede contener un máximo de 1500 caracteres, para que realice en forma clara y concreta su petición ante la entidad."
         ></textarea>
-        <label htmlFor="respuesta" className="block text-gray-700">
-          Respuesta
-        </label>
-        <textarea
-          id="respuesta"
-          className="block w-full p-2 border border-gray-300 rounded"
-          maxLength="1500"
-          placeholder="La respuesta puede contener un máximo de 1500 caracteres."
-        ></textarea>
+
         <label htmlFor="anexos" className="block text-gray-700">
           Anexos
         </label>
@@ -79,7 +96,32 @@ export function Solicitudes() {
 
       <Accordion>
         <AccordionItem
-          title="Caracterización de ciudadanos, usuarios y grupos de interés"
+          title={
+            <div className="flex items-center">
+              Registre sus datos personales
+              <Tooltip
+                content="Ingrese sus datos personales para continuar con el trámite. En dado caso de no querer identificarse, seleccione la opción de anónimo."
+                placement="right"
+              >
+                <div className="relative flex items-center justify-center ml-2 w-10 h-10 bg-white text-blue-600 rounded-full cursor-pointer">
+                  <svg
+                    className="w-5 h-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4m0 4h.01M12 4a8 8 0 100 16 8 8 0 000-16z"
+                    />
+                  </svg>
+                </div>
+              </Tooltip>
+            </div>
+          }
           classNames={{ title: "text-[#3367d6] font-bold" }}
         >
           <div className="grid grid-cols-2 gap-4">
