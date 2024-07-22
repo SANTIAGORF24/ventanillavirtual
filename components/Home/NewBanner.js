@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 export function NewBanner({
   onConsultClick,
@@ -101,11 +102,29 @@ export function NewBanner({
 
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-[#3367d6] text-4xl font-bold text-center w-full py-4 mb-4">
-        Ventanilla Virtual
-        <br />
-        Ministerio del Deporte
-      </h1>
+      <div className="relative w-full py-4 mb-4 flex justify-center items-center">
+        <div className="absolute left-1/4 transform -translate-x-1/2">
+          <Image
+            src="/assets/img/logo.png"
+            alt="Logo Ministerio del Deporte Izquierda"
+            width={80}
+            height={80}
+          />
+        </div>
+        <h1 className="text-[#3367d6] text-4xl font-bold text-center">
+          Ventanilla Virtual
+          <br />
+          Ministerio del Deporte
+        </h1>
+        <div className="absolute right-1/4 transform translate-x-1/2">
+          <Image
+            src="/assets/img/logo.png"
+            alt="Logo Ministerio del Deporte Derecha"
+            width={80}
+            height={80}
+          />
+        </div>
+      </div>
       <div className="bg-gray-100 border border-gray-300 p-6 rounded-lg text-left text-sm w-4/6 shadow-md">
         <p className="mb-4 leading-relaxed">
           El{" "}
