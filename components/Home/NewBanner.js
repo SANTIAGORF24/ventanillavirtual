@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 
 export function NewBanner({
   onConsultClick,
@@ -74,6 +73,25 @@ export function NewBanner({
         : "hover:bg-white hover:text-[#3367d6]"
     }
   `;
+
+  const getTooltipText = () => {
+    switch (selectedOption) {
+      case "pqrs":
+        return "Toda persona tiene derecho a presentar peticiones respetuosas a las autoridades por motivos de interés general o particular y a obtener pronta resolución de acuerdo a lo establecido en el Código de Procedimiento Administrativo y de lo Contencioso Administrativo, reglamentado por la Ley 1755 de 2015.";
+      case "denuncias":
+        return "Dato que busca poner en conocimiento o dejar constancia ante las autoridades respectivas de un hecho o acción que se ha producido en contravía de las disposiciones legales o reglamentarias.";
+      case "consultas":
+        return "Documento en el que se indica la situación de la Personería Jurídica de los organismos deportivos así como también la persona natural que ostenta la representación legal de los mencionados organismos deportivos, incluyendo relación de integrantes del Órgano de Administración y del Órgano de Control.";
+      case "solicitudes":
+        return "Facultad que tienen las personas naturales y jurídicas de solicitar certificaciones de contratos celebrados con la Entidad. Se deben indicar los siguientes datos: Número de Contrato, año, nombre del titular del contrato, documento de identidad. Si requiere que la certificación de contrato contenga algún tipo de información específica deberá señalarlo y describir el contenido que debe llevar.";
+      case "tramites":
+        return "Trámites del ministerio del deporte.";
+      case "opas":
+        return "Servicios que presta el ministerio del deporte.";
+      default:
+        return "";
+    }
+  };
 
   return (
     <div className="flex flex-col items-center">
@@ -198,14 +216,10 @@ export function NewBanner({
                     left: "50%",
                     transform: "translateX(-50%)",
                     marginTop: "5px",
-                    width: "1000px",
+                    width: "200px",
                   }}
                 >
-                  Toda persona tiene derecho a presentar peticiones respetuosas
-                  a las autoridades por motivos de interés general o particular
-                  y a obtener pronta resolución de acuerdo a lo establecido en
-                  el Código de Procedimiento Administrativo y de lo Contencioso
-                  Administrativo, reglamentado por la Ley 1755 de 2015.
+                  {getTooltipText()}
                 </div>
               </span>
             </label>

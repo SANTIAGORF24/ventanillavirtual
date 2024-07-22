@@ -1,0 +1,74 @@
+<div className="space-y-4">
+    <label htmlFor="tipo-solicitud" className="block text-gray-700">
+      Subtema{" "}
+    </label>
+    <select
+      id="tipo-solicitud"
+      className="block w-full p-2 border border-gray-300 rounded"
+    >
+      <option value="">Seleccione</option>
+      <option value="autorizacion-exencion-impuestos">
+        Autorización de exención de impuestos y tasas de salida del país
+      </option>
+      <option value="uso-terapeutico-sustancias">
+        Solicitud de autorización de uso terapéutico de sustancias y métodos
+        prohibidos
+      </option>
+      <option value="tramites">Trámites</option>
+      <option value="inclusion-programa-glorias">
+        Inclusión al Programa Glorias del Deporte
+      </option>
+      <option value="inscripcion-miembros-federacion">
+        Inscripción de Miembros Federación Deportiva y Clubes Profesionales
+        organizados como Corporaciones y Asociaciones
+      </option>
+      <option value="inscripcion-reformas-estatutarias">
+        Inscripción de Reformas Estatutarias de Federaciones Deportivas y
+        Clubes Profesionales organizados como Corporaciones y Asociaciones
+      </option>
+      <option value="licencia-deportistas">
+        Licencia Remunerada a Deportistas y Personal de Apoyo a Deportistas
+      </option>
+      <option value="personeria-juridica-clubes">
+        Otorgamiento de personería jurídica de clubes profesionales
+        organizados como corporaciones o asociaciones
+      </option>
+      <option value="personeria-juridica-federaciones">
+        Otorgamiento personería jurídica a federaciones
+      </option>
+      <option value="reconocimiento-clubes-sociedades">
+        Otorgamiento reconocimiento deportivo de clubes profesionales
+        constituidos como sociedades anónimas
+      </option>
+      <option value="reconocimiento-federaciones">
+        Otorgamiento reconocimiento deportivo de federaciones deportivas
+        nacionales
+      </option>
+      <option value="reconocimiento-ligas">
+        Otorgamiento reconocimiento deportivo de ligas y asociaciones
+        deportivas departamentales
+      </option>
+      <option value="permiso-estudiantes">
+        Permiso a estudiantes para representar al país en competiciones o
+        eventos internacionales oficiales
+      </option>
+      <option value="prestamo-escenarios">
+        Préstamo y/o Alquiler de escenarios deportivos
+      </option>
+      <option value="registro-libros">
+        Registro de Libros de Federaciones Deportiva y Clubes Profesionales
+        organizados como Corporaciones y Asociaciones
+      </option>
+      <option value="renovacion-clubes">
+        Renovación reconocimiento deportivo de clubes profesionales
+        organizados como Asociaciones o Corporaciones
+      </option>
+      <option value="renovacion-federaciones">
+        Renovación del reconocimiento Deportivo de Federaciones Nacionales
+      </option>
+      <option value="renovacion-ligas">
+        Renovación reconocimiento deportivo de ligas y asociaciones
+        deportivas departamentales
+      </option>
+    </select>
+  </div>

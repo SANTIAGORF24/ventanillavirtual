@@ -260,7 +260,17 @@ export function Consultas() {
         >
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label htmlFor="medio-respuesta" className="block text-gray-700">
+              <div className="bg-gray-100 border border-gray-300 p-4 rounded-lg text-left text-sm w-4/6">
+                <p>
+                  De acuerdo a lo establecido en el artículo 56 de la Ley 1437
+                  de 2011, autorizó bajo mi responsabilidad me envíen respuesta
+                  a través de
+                </p>
+              </div>
+              <label
+                htmlFor="medio-respuesta"
+                className="block text-gray-700 pt-5"
+              >
                 Medio de respuesta
               </label>
               <select
@@ -268,29 +278,17 @@ export function Consultas() {
                 className="block w-full p-2 border border-gray-300 rounded"
               >
                 <option value="">Seleccione</option>
+                <option value="correo">
+                  Página Web Sistema de Gestión de Peticiones
+                </option>
                 <option value="correo">Correo electrónico</option>
-                <option value="fisico">Físico</option>
-              </select>
-            </div>
-            <div>
-              <label
-                htmlFor="notificacion-terminos"
-                className="block text-gray-700"
-              >
-                Notificación de términos
-              </label>
-              <select
-                id="notificacion-terminos"
-                className="block w-full p-2 border border-gray-300 rounded"
-              >
-                <option value="">Seleccione</option>
-                <option value="correo">Correo electrónico</option>
-                <option value="fisico">Físico</option>
+                <option value="fisico">Direccion fisica </option>
+                <option value="correo">Presencial / telefonica</option>
+                <option value="correo">Chat</option>
               </select>
             </div>
           </div>
         </AccordionItem>
-
         <AccordionItem
           title="Código de seguridad"
           classNames={{ title: "text-[#3367d6] font-bold" }}

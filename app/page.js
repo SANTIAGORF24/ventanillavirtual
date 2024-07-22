@@ -4,10 +4,10 @@ import { ConsultForm } from "@/components/Home/ConsultForm";
 import { NewBanner } from "@/components/Home/NewBanner";
 import { RegisterPetitionForm } from "@/components/Home/RegisterPetitionForm";
 import { Tramites } from "@/components/Home/tramites";
-import { Opas } from "@/components/Home/opas";
 import { Consultas } from "@/components/Home/Consultas";
 import { Denuncias } from "@/components/Home/Denuncias";
 import { Solicitudes } from "@/components/Home/Solicitudes";
+import { Opas } from "@/components/Home/opas";
 
 export default function Home() {
   const [activeForm, setActiveForm] = useState(null);
