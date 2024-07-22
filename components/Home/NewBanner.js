@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 export function NewBanner({
   onConsultClick,
@@ -13,6 +13,7 @@ export function NewBanner({
   const [showSubButtons, setShowSubButtons] = useState(false);
   const [activeButton, setActiveButton] = useState(null);
   const [selectedOption, setSelectedOption] = useState("");
+  const selectedOptionRef = useRef(null);
 
   useEffect(() => {
     setActiveButton(null);
@@ -57,6 +58,11 @@ export function NewBanner({
       default:
         break;
     }
+
+    // Scroll to the selected option's component
+    setTimeout(() => {
+      selectedOptionRef.current.scrollIntoView({ behavior: "smooth" });
+    }, 100); // Delay to ensure the component has rendered
   };
 
   const buttonStyle = (isActive) => `
@@ -241,7 +247,10 @@ export function NewBanner({
             </select>
           </div>
           {selectedOption && (
-            <div className="bg-blue-100 border border-gray-300 p-6 rounded-lg text-left text-sm w-4/6 shadow-md mb-4">
+            <div
+              ref={selectedOptionRef}
+              className="bg-blue-100 border border-gray-300 p-6 rounded-lg text-left text-sm w-4/6 shadow-md mb-4"
+            >
               <p className="leading-relaxed">{getTooltipText()}</p>
             </div>
           )}
