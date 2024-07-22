@@ -7,6 +7,7 @@ import { Consultas } from "@/components/Home/Consultas";
 import { Denuncias } from "@/components/Home/Denuncias";
 import { Solicitudes } from "@/components/Home/Solicitudes";
 import { Opas } from "@/components/Home/Opas";
+import { Tramites } from "@/components/Home/Tramites";
 
 export default function Home() {
   const [activeForm, setActiveForm] = useState(null);
@@ -29,7 +30,7 @@ export default function Home() {
       />
       {activeForm === "consult" && <ConsultForm />}
       {activeForm === "pqrs" && <RegisterPetitionForm />}
-      {activeForm === "tramites" && <Opas />}
+      {activeForm === "tramites" && <Tramites />}
       {activeForm === "opas" && <Opas />}
       {activeForm === "consultas" && <Consultas />}
       {activeForm === "denuncias" && <Denuncias />}
