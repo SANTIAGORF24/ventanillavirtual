@@ -35,7 +35,6 @@ export function Opas() {
           </option>
         </select>
       </div>
-
       <div className="space-y-4">
         <div className="flex items-center">
           <label htmlFor="descripcion" className="block text-gray-700">
@@ -67,7 +66,7 @@ export function Opas() {
           id="descripcion"
           className="block w-full p-2 border border-gray-300 rounded"
           maxLength="1500"
-          placeholder="Su solicitud puede contener un máximo de 1500 caracteres, para que realice en forma clara y concreta su petición ante la entidad."
+          placeholder="Su solicitud puede contener un máximo de 1500 caracteres, para que realice en forma clara y concreta su solicitud ante la entidad."
         ></textarea>
 
         <label htmlFor="anexos" className="block text-gray-700">
@@ -133,9 +132,16 @@ export function Opas() {
               >
                 <option value="">Seleccione</option>
                 <option value="anonimo">Anónimo</option>
-                <option value="cc">Cédula de Ciudadanía</option>
-                <option value="ce">Cédula de Extranjería</option>
-                <option value="ti">Tarjeta de Identidad</option>
+                <option value="CC">Cédula de Ciudadanía (CC)</option>
+                <option value="CE">Cédula de Extranjería (CE)</option>
+                <option value="TI">Tarjeta de Identidad (TI)</option>
+                <option value="NUIP">
+                  Número Único de Identificación Personal (NUIP)
+                </option>
+                <option value="NIP">
+                  Número de Identificación Personal (NIP)
+                </option>
+                <option value="PA">Pasaporte</option>
               </select>
             </div>
             {tipoIdentificacion && tipoIdentificacion !== "anonimo" && (
@@ -294,6 +300,200 @@ export function Opas() {
                     <option value="">Seleccione</option>
                   </select>
                 </div>
+                <div className="col-span-2 bg-gray-100 border border-gray-300 p-4 rounded-lg text-left text-sm w-full">
+                  <p className="w-full">
+                    MINDEPORTE está comprometido en permitir el ejercicio
+                    efectivo de los derechos de todas las poblaciones, de ahí
+                    nuestro interés en identificar características relevantes
+                    que nos permitan adecuar nuestra oferta institucional. Si
+                    pertenece o se identifica con algún grupo poblacional
+                    específico a continuación podrá indicarlo asi en formato
+                    como
+                  </p>
+                </div>
+                <div className="col-span-1">
+                  <label htmlFor="edad" className="block text-gray-700">
+                    Edad
+                  </label>
+                  <select
+                    id="edad"
+                    className="block w-full p-2 border border-gray-300 rounded"
+                  >
+                    <option value="">Seleccione</option>
+                    <option value="0-5">Primera infancia de 0 a 5 años</option>
+                    <option value="6-11">Infancia de 6 a 11 años</option>
+                    <option value="12-17">Adolescencia de 12 a 17 años</option>
+                    <option value="18-28">Jóvenes 18 a 28 años</option>
+                    <option value="29-59">Adultos 29 a 59 años</option>
+                    <option value="60+">Adulto mayores - 60 años o más</option>
+                    <option value="prefiero-no-decirlo">
+                      Prefiero no decirlo
+                    </option>
+                  </select>
+                </div>
+                <div className="col-span-1">
+                  <label
+                    htmlFor="sexo-nacimiento"
+                    className="block text-gray-700"
+                  >
+                    Sexo de Nacimiento
+                  </label>
+                  <select
+                    id="sexo-nacimiento"
+                    className="block w-full p-2 border border-gray-300 rounded"
+                  >
+                    <option value="">Seleccione</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="intersexo">Intersexo</option>
+                    <option value="prefiero-no-decirlo">
+                      Prefiero no decirlo
+                    </option>
+                  </select>
+                </div>
+                <div className="col-span-1">
+                  <label
+                    htmlFor="identidad-genero"
+                    className="block text-gray-700"
+                  >
+                    Identidad de género
+                  </label>
+                  <select
+                    id="identidad-genero"
+                    className="block w-full p-2 border border-gray-300 rounded"
+                  >
+                    <option value="">Seleccione</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="transgenero">Transgénero</option>
+                    <option value="no-binario">No binario</option>
+                    <option value="prefiero-no-decirlo">
+                      Prefiero no decirlo
+                    </option>
+                    <option value="otra">Otra</option>
+                  </select>
+                </div>
+                <div className="col-span-1">
+                  <label
+                    htmlFor="orientacion-sexual"
+                    className="block text-gray-700"
+                  >
+                    Orientación sexual
+                  </label>
+                  <select
+                    id="orientacion-sexual"
+                    className="block w-full p-2 border border-gray-300 rounded"
+                  >
+                    <option value="">Seleccione</option>
+                    <option value="heterosexual">Heterosexual</option>
+                    <option value="gay">Gay</option>
+                    <option value="lesbiana">Lesbiana</option>
+                    <option value="bisexual">Bisexual</option>
+                    <option value="prefiero-no-decirlo">
+                      Prefiero no decirlo
+                    </option>
+                    <option value="otra">Otra</option>
+                  </select>
+                </div>
+                <div className="col-span-1">
+                  <label
+                    htmlFor="personas-discapacidad"
+                    className="block text-gray-700"
+                  >
+                    Personas con Discapacidad
+                  </label>
+                  <select
+                    id="personas-discapacidad"
+                    className="block w-full p-2 border border-gray-300 rounded"
+                  >
+                    <option value="">Seleccione</option>
+                    <option value="auditiva">Auditiva</option>
+                    <option value="fisica">Física</option>
+                    <option value="intelectual">Intelectual (cognitiva)</option>
+                    <option value="multiple">Múltiple</option>
+                    <option value="psicosocial">Psicosocial (mental)</option>
+                    <option value="visual">Visual</option>
+                    <option value="sordo-ceguera">Sordo-ceguera</option>
+                    <option value="ninguna">Ninguna</option>
+                    <option value="otra">Otra</option>
+                    <option value="prefiero-no-decirlo">
+                      Prefiero no decirlo
+                    </option>
+                  </select>
+                </div>
+                <div className="col-span-1">
+                  <label
+                    htmlFor="grupos-etnicos"
+                    className="block text-gray-700"
+                  >
+                    Grupos Étnicos y Otros
+                  </label>
+                  <select
+                    id="grupos-etnicos"
+                    className="block w-full p-2 border border-gray-300 rounded"
+                  >
+                    <option value="">Seleccione</option>
+                    <option value="comunidades-campesinas">
+                      Comunidades campesinas
+                    </option>
+                    <option value="negro-mulato-afrodescendiente">
+                      Negro(a), mulato(a), afrodescendiente, afrocolombiano(a)
+                    </option>
+                    <option value="palenquero">Palenquero/a</option>
+                    <option value="pueblos-indigenas">Pueblos indígenas</option>
+                    <option value="gitano">Gitano/a (Rrom)</option>
+                    <option value="raizales">Raizales</option>
+                    <option value="prefiero-no-decirlo">
+                      Prefiero no decirlo
+                    </option>
+                    <option value="ninguna">Ninguna de las anteriores</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+                <div className="col-span-1">
+                  <label
+                    htmlFor="victimas-violencia"
+                    className="block text-gray-700"
+                  >
+                    Víctimas de Violencia o Desplazamiento
+                  </label>
+                  <select
+                    id="victimas-violencia"
+                    className="block w-full p-2 border border-gray-300 rounded"
+                  >
+                    <option value="">Seleccione</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+                <div className="col-span-1">
+                  <label htmlFor="priorizacion" className="block text-gray-700">
+                    Priorización
+                  </label>
+                  <select
+                    id="priorizacion"
+                    className="block w-full p-2 border border-gray-300 rounded"
+                  >
+                    <option value="">Seleccione</option>
+                    <option value="mujeres-embarazo">
+                      Mujeres en estado de embarazo
+                    </option>
+                    <option value="adultos-mayores">
+                      Personas adultas mayores
+                    </option>
+                    <option value="periodistas">Periodistas</option>
+                    <option value="ninos-adolescentes">
+                      Niños, niñas y adolescentes
+                    </option>
+                    <option value="personas-discapacidad">
+                      Personas con Discapacidad
+                    </option>
+                    <option value="veteranos-fuerza-publica">
+                      Veteranos de la fuerza pública
+                    </option>
+                    <option value="ninguno">Ninguno</option>
+                  </select>
+                </div>
               </>
             )}
           </div>
@@ -323,13 +523,9 @@ export function Opas() {
                 className="block w-full p-2 border border-gray-300 rounded"
               >
                 <option value="">Seleccione</option>
-                <option value="correo">
-                  Página Web Sistema de Gestión de Peticiones
-                </option>
+
                 <option value="correo">Correo electrónico</option>
                 <option value="fisico">Direccion fisica </option>
-                <option value="correo">Presencial / telefonica</option>
-                <option value="correo">Chat</option>
               </select>
             </div>
           </div>
