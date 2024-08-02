@@ -7,9 +7,31 @@ import Image from "next/image";
 
 export function Opas() {
   const [tipoIdentificacion, setTipoIdentificacion] = useState("");
+  const [subtema, setSubtema] = useState("");
+  const [tipoActividad, setTipoActividad] = useState("");
+  const [especialidad, setEspecialidad] = useState("");
+  const [numParticipantes, setNumParticipantes] = useState(0);
 
   const handleTipoIdentificacionChange = (e) => {
     setTipoIdentificacion(e.target.value);
+  };
+
+  const handleSubtemaChange = (e) => {
+    setSubtema(e.target.value);
+    setTipoActividad(""); // Reset tipoActividad cuando se cambia el subtema
+    setEspecialidad(""); // Reset especialidad cuando se cambia el subtema
+  };
+
+  const handleTipoActividadChange = (e) => {
+    setTipoActividad(e.target.value);
+  };
+
+  const handleEspecialidadChange = (e) => {
+    setEspecialidad(e.target.value);
+  };
+
+  const handleNumParticipantesChange = (e) => {
+    setNumParticipantes(parseInt(e.target.value, 10));
   };
 
   return (
@@ -21,6 +43,8 @@ export function Opas() {
         <select
           id="tipo-solicitud"
           className="block w-full p-2 border border-gray-300 rounded"
+          value={subtema}
+          onChange={handleSubtemaChange}
         >
           <option value="">Seleccione</option>
           <option value="educacion-prevencion-antidopaje">
@@ -35,6 +59,171 @@ export function Opas() {
           </option>
         </select>
       </div>
+
+      {subtema === "capacitacion-centro-ciencias-deporte" && (
+        <div className="space-y-4">
+          <div className="bg-gray-100 border border-gray-300 p-6 rounded-lg text-left text-sm w-full shadow-md">
+            <p className="mb-4 leading-relaxed">
+              Tener en cuentaque las visitas o capacitaciones van dirigidas a
+              instituciones educativas, su solicitud se respondera en 5 dias
+              informandole en que fecha y hora podra asisitir
+            </p>
+          </div>
+          <label htmlFor="tipo-actividad" className="block text-gray-700">
+            Tipo de Actividad
+          </label>
+          <select
+            id="tipo-actividad"
+            className="block w-full p-2 border border-gray-300 rounded"
+            value={tipoActividad}
+            onChange={handleTipoActividadChange}
+          >
+            <option value="">Seleccione</option>
+            <option value="capacitación">Capacitación</option>
+            <option value="visita">Visita</option>
+          </select>
+        </div>
+      )}
+
+      {tipoActividad === "capacitación" && (
+        <div className="space-y-4">
+          <div className="bg-gray-100 border border-gray-300 p-6 rounded-lg text-left text-sm w-4/6 shadow-md">
+            <p className="mb-4 leading-relaxed">texto de capacitacion</p>
+          </div>
+          <label htmlFor="especialidad" className="block text-gray-700">
+            Especialidad
+          </label>
+          <select
+            id="especialidad"
+            className="block w-full p-2 border border-gray-300 rounded"
+            value={especialidad}
+            onChange={handleEspecialidadChange}
+          >
+            <option value="">Seleccione</option>
+            <option value="MEDICINA DEL DEPORTE">MEDICINA DEL DEPORTE</option>
+            <option value="PSICOLOGIA DEL DEPORTE">
+              PSICOLOGIA DEL DEPORTE
+            </option>
+            <option value="NUTRICION">NUTRICION</option>
+            <option value="FISIOTERAPIA">FISIOTERAPIA</option>
+            <option value="LABORATORIO NEUROCIENCIAS">
+              LABORATORIO NEUROCIENCIAS
+            </option>
+            <option value="LABORATORIO BIOMECANICA">
+              LABORATORIO BIOMECANICA
+            </option>
+            <option value="LABORATORIO FISIOLOGIA">
+              LABORATORIO FISIOLOGIA
+            </option>
+            <option value="LABORATORIO CINEANTROPOMETRIA">
+              LABORATORIO CINEANTROPOMETRIA
+            </option>
+          </select>
+        </div>
+      )}
+
+      {tipoActividad === "visita" && (
+        <div className="space-y-4">
+          <div className="bg-gray-100 border border-gray-300 p-6 rounded-lg text-left text-sm w-4/6 shadow-md">
+            <p className="mb-4 leading-relaxed">texto de visita</p>
+          </div>
+        </div>
+      )}
+
+      {tipoActividad && (
+        <div className="space-y-4">
+          <label htmlFor="num-participantes" className="block text-gray-700">
+            Número de Participantes
+          </label>
+          <select
+            id="num-participantes"
+            className="block w-full p-2 border border-gray-300 rounded"
+            value={numParticipantes}
+            onChange={handleNumParticipantesChange}
+          >
+            <option value="">Seleccione</option>
+            {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
+              <option key={num} value={num}>
+                {num}
+              </option>
+            ))}
+          </select>
+        </div>
+      )}
+
+      {numParticipantes > 0 && (
+        <div className="space-y-4">
+          <div className="bg-gray-100 border border-gray-300 p-6 rounded-lg text-left text-sm w-4/6 shadow-md">
+            <p className="mb-4 leading-relaxed">
+              Tenga en cuenta que si usted va a asistir debe incluirse en la
+              tabla de participantes
+            </p>
+          </div>
+          <h3 className="text-gray-700 font-semibold">
+            Lista de Participantes
+          </h3>
+          <table className="min-w-full bg-white border border-gray-300">
+            <thead>
+              <tr>
+                <th className="py-2 px-4 border-b">#</th>
+                <th className="py-2 px-4 border-b">Cargo</th>
+                <th className="py-2 px-4 border-b">Nombre Completo</th>
+                <th className="py-2 px-4 border-b">Tipo de Documento</th>
+                <th className="py-2 px-4 border-b">Documento</th>
+                <th className="py-2 px-4 border-b">EPS</th>
+              </tr>
+            </thead>
+            <tbody>
+              {Array.from({ length: numParticipantes }, (_, i) => (
+                <tr key={i}>
+                  <td className="py-2 px-4 border-b">{i + 1}</td>
+                  <td className="py-2 px-4 border-b">
+                    <input
+                      type="text"
+                      className="block w-full p-2 border border-gray-300 rounded"
+                    />
+                  </td>
+                  <td className="py-2 px-4 border-b">
+                    <input
+                      type="text"
+                      className="block w-full p-2 border border-gray-300 rounded"
+                    />
+                  </td>
+                  <td className="py-2 px-4 border-b">
+                    <select className="block w-full p-2 border border-gray-300 rounded">
+                      <option value="">Seleccione</option>
+                      <option value="CC">Cédula de Ciudadanía (CC)</option>
+                      <option value="CE">Cédula de Extranjería (CE)</option>
+                      <option value="TI">Tarjeta de Identidad (TI)</option>
+                      <option value="NUIP">
+                        Número Único de Identificación Personal (NUIP)
+                      </option>
+                      <option value="NIP">
+                        Número de Identificación Personal (NIP)
+                      </option>
+                      <option value="PA">Pasaporte</option>
+                    </select>
+                  </td>
+                  <td className="py-2 px-4 border-b">
+                    <input
+                      type="text"
+                      className="block w-full p-2 border border-gray-300 rounded"
+                    />
+                  </td>
+                  <td className="py-2 px-4 border-b">
+                    <input
+                      type="text"
+                      className="block w-full p-2 border border-gray-300 rounded"
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      {/* El resto del formulario sigue aquí */}
       <div className="space-y-4">
         <div className="flex items-center">
           <label htmlFor="descripcion" className="block text-gray-700">
@@ -65,10 +254,8 @@ export function Opas() {
         <textarea
           id="descripcion"
           className="block w-full p-2 border border-gray-300 rounded"
-          maxLength="1500"
-          placeholder="Su solicitud puede contener un máximo de 1500 caracteres, para que realice en forma clara y concreta su solicitud ante la entidad."
-        ></textarea>
-
+          rows="5"
+        />
         <label htmlFor="anexos" className="block text-gray-700">
           Anexos
         </label>
@@ -86,6 +273,7 @@ export function Opas() {
         </p>
       </div>
 
+      {/* Información del formulario */}
       <Accordion>
         <AccordionItem
           title={
