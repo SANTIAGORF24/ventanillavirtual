@@ -88,7 +88,18 @@ export function Opas() {
       {tipoActividad === "capacitación" && (
         <div className="space-y-4">
           <div className="bg-gray-100 border border-gray-300 p-6 rounded-lg text-left text-sm w-4/6 shadow-md">
-            <p className="mb-4 leading-relaxed">texto de capacitacion</p>
+            <p className="mb-4 leading-relaxed">
+              Espacio con una duración variable en función del requerimiento,
+              entre dos y seis horas según los objetivos planteados previamente;
+              con lo anterior una capacitación obedece a un proceso en el cual
+              se describe el funcionamiento interno de un área, un laboratorio
+              especifico, o de una técnica. Estas capacitaciones están
+              priorizadas para instituciones académicas y/o educativas
+              relacionadas con las Ciencias Aplicadas al Deporte de carácter
+              nacional o internacional, que en el marco de su proceso formativo
+              requieran de estos insumos. El grupo máximo a recibir por
+              capacitación es de 20 personas.{" "}
+            </p>
           </div>
           <label htmlFor="especialidad" className="block text-gray-700">
             Especialidad
@@ -125,7 +136,18 @@ export function Opas() {
       {tipoActividad === "visita" && (
         <div className="space-y-4">
           <div className="bg-gray-100 border border-gray-300 p-6 rounded-lg text-left text-sm w-4/6 shadow-md">
-            <p className="mb-4 leading-relaxed">texto de visita</p>
+            <p className="mb-4 leading-relaxed">
+              Se encuentra enfocada en un reconocimiento de la infraestructura,
+              organización y funcionamiento del Centro de Ciencias. El tiempo
+              máximo estipulado para esta actividad es de dos horas; en el cual
+              se desarrolla una recorrido por las instalaciones, guiado por uno
+              o varios profesionales vinculados, se realiza un reconocimiento de
+              los espacios, así como de las actividades asistenciales, y de
+              docencia e investigación que se llevan a cabo dentro en el Centro
+              de Ciencias. Durante la visita se darán espacios para resolver
+              inquietudes o interrogantes que los participantes tengan. El grupo
+              máximo por recorrido es de 20 personas.{" "}
+            </p>
           </div>
         </div>
       )}
