@@ -69,15 +69,15 @@ export function NewBanner({
   const buttonStyle = (isActive) => `
     ${
       isActive
-        ? "bg-white text-[#3367d6] border-[#3367d6] border-2"
-        : "bg-[#3367d6] text-white"
+        ? "bg-white text-[#4b569c] border-[#4b569c] border-2"
+        : "bg-[#4b569c] text-white"
     } 
     text-lg font-bold py-4 px-6 rounded
     transition-colors duration-300
     ${
       isActive
-        ? "hover:bg-white hover:text-[#3367d6] hover:border-[#3367d6]"
-        : "hover:bg-white hover:text-[#3367d6]"
+        ? "hover:bg-white hover:text-[#4b569c] hover:border-[#4b569c]"
+        : "hover:bg-white hover:text-[#4b569c]"
     }
   `;
 
@@ -102,7 +102,7 @@ export function NewBanner({
 
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-[#3367d6] text-4xl font-bold text-center w-full py-4 mb-4">
+      <h1 className="text-[#4b569c] text-4xl font-bold text-center w-full py-4 mb-4">
         Ventanilla Virtual
         <br />
         Ministerio del Deporte
@@ -110,7 +110,7 @@ export function NewBanner({
       <div className="bg-gray-100 border border-gray-300 p-6 rounded-lg text-left text-sm w-4/6 shadow-md">
         <p className="mb-4 leading-relaxed">
           El{" "}
-          <span className="font-semibold text-[#3367d6]">
+          <span className="font-semibold text-[#4b569c]">
             Ministerio del Deporte
           </span>{" "}
           pone a disposición de la ciudadanía el siguiente formulario
@@ -160,12 +160,12 @@ export function NewBanner({
       {showSubButtons && (
         <>
           <div className="bg-gray-100 border border-gray-300 p-4 rounded-lg text-left text-sm w-4/6">
-            <h2 className="text-[#3367d6] text-lg font-bold">Información</h2>
+            <h2 className="text-[#4b569c] text-lg font-bold">Información</h2>
             <p>
               El Ministerio del Deporte le informa que, al momento de enviar su
               solicitud, usted está aceptando el manejo de sus datos personales,
               el cual se realiza conforme a lo establecido en nuestra
-              <a href="#" className="text-[#3367d6] underline">
+              <a href="#" className="text-[#4b569c] underline">
                 Política de Protección de Datos Personales
               </a>
               .
@@ -173,7 +173,7 @@ export function NewBanner({
             <p>
               Si usted no tiene certeza sobre el tipo de petición a ingresar,
               consulte el documento de ayuda
-              <a href="#" className="text-[#3367d6] underline">
+              <a href="#" className="text-[#4b569c] underline">
                 aquí
               </a>
               .
@@ -187,7 +187,7 @@ export function NewBanner({
           <div className="flex flex-col items-center w-4/6 py-8 px-4">
             <label
               htmlFor="tipo-solicitud"
-              className="block text-[#3367d6] text-lg font-bold mb-2"
+              className="block text-[#4b569c] text-lg font-bold mb-2"
             >
               Tipo de solicitud
               <span
@@ -203,7 +203,7 @@ export function NewBanner({
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-[#3367d6]"
+                  className="h-5 w-5 text-[#4b569c]"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"

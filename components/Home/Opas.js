@@ -324,7 +324,7 @@ export function Opas() {
               </Tooltip>
             </div>
           }
-          classNames={{ title: "text-[#3367d6] font-bold" }}
+          classNames={{ title: "text-[#4b569c] font-bold" }}
         >
           <div className="grid grid-cols-2 gap-4">
             <div>
@@ -711,7 +711,7 @@ export function Opas() {
 
         <AccordionItem
           title="Medio de respuesta"
-          classNames={{ title: "text-[#3367d6] font-bold" }}
+          classNames={{ title: "text-[#4b569c] font-bold" }}
         >
           <div className="grid grid-cols-2 gap-4">
             <div>
@@ -743,7 +743,7 @@ export function Opas() {
 
         <AccordionItem
           title="Código de seguridad"
-          classNames={{ title: "text-[#3367d6] font-bold" }}
+          classNames={{ title: "text-[#4b569c] font-bold" }}
         >
           <div className="space-y-4">
             <p className="text-gray-600">
@@ -770,7 +770,7 @@ export function Opas() {
       </Accordion>
 
       <div className="text-center mt-8">
-        <button className="w-full bg-[#3367d6] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button className="w-full bg-[#4b569c] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           Enviar
         </button>
       </div>

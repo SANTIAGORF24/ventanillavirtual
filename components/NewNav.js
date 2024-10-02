@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function NewNav() {
   return (
-    <nav className="bg-[#3367d6] flex items-center justify-between p-2">
+    <nav className="bg-[#4b569c] flex items-center justify-between p-2">
       <div className="flex items-center justify-center w-full">
         <div className="flex justify-start w-3/4">
           <Image

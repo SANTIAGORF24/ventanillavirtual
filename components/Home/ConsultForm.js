@@ -10,7 +10,7 @@ export function ConsultForm() {
 
   return (
     <div className="flex flex-col items-center w-full p-6 space-y-6 bg-white shadow-md rounded">
-      <h2 className="text-[#3367d6] text-2xl font-bold text-center">
+      <h2 className="text-[#4b569c] text-2xl font-bold text-center">
         Lo invitamos a consultar el estado de su solicitud.
       </h2>
       <div className="bg-gray-100 border border-gray-300 p-4 rounded-lg text-center text-sm w-full max-w-lg shadow-md mt-4 mx-auto">
@@ -46,7 +46,7 @@ export function ConsultForm() {
             />
           </div>
         </div>
-        <button className="bg-[#3367d6] text-white font-bold py-2 px-4 rounded w-full hover:bg-white hover:text-[#3367d6] hover:border-[#3367d6] hover:border-2 transition-colors duration-300">
+        <button className="bg-[#4b569c] text-white font-bold py-2 px-4 rounded w-full hover:bg-white hover:text-[#4b569c] hover:border-[#4b569c] hover:border-2 transition-colors duration-300">
           Buscar
         </button>
 
@@ -115,7 +115,7 @@ export function ConsultForm() {
             />
           </div>
         )}
-        <button className="bg-[#3367d6] text-white font-bold py-2 px-4 rounded w-full hover:bg-white hover:text-[#3367d6] hover:border-[#3367d6] hover:border-2 transition-colors duration-300">
+        <button className="bg-[#4b569c] text-white font-bold py-2 px-4 rounded w-full hover:bg-white hover:text-[#4b569c] hover:border-[#4b569c] hover:border-2 transition-colors duration-300">
           Recuperar al correo
         </button>
       </div>
