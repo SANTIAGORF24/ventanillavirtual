@@ -1,37 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏛️ Ventanilla Virtual — Atención ciudadana del Ministerio del Deporte
 
-## Getting Started
+> Portal de trámites y peticiones ciudadanas (PQRSD) para el **Ministerio del Deporte de
+> Colombia**. Formularios dinámicos por tipo de solicitud, radicación en línea y consulta
+> del estado del trámite.
 
-First, run the development server:
+---
+
+## 🎯 Contexto
+
+En Colombia, toda entidad pública está obligada a ofrecer un canal de **PQRSD**
+—peticiones, quejas, reclamos, sugerencias y denuncias— y a permitir su consulta posterior.
+Este portal es ese canal para el Ministerio del Deporte.
+
+El reto técnico no es el formulario en sí, sino que **cada tipo de trámite pide campos
+distintos** y esos tipos cambian con la normativa. La solución es un motor de formularios
+dirigido por configuración (`DynamicForm.js`) en lugar de un formulario codificado por
+cada trámite.
+
+---
+
+## ✨ Módulos
+
+| Sección | Función |
+| --- | --- |
+| **Trámites** | Catálogo de trámites disponibles ante la entidad |
+| **OPAS** | Otros procedimientos administrativos |
+| **Solicitudes** | Registro de peticiones con formulario dinámico según el tipo |
+| **Denuncias** | Canal específico de denuncias |
+| **Consultas** | Consulta del estado de un radicado |
+| **Formulario dinámico** | Genera los campos a partir de la definición del trámite |
+
+---
+
+## 🧱 Stack
+
+- **Next.js** (App Router) · **React**
+- **NextUI** — sistema de componentes
+- **Tailwind CSS**
+- Formularios dirigidos por configuración
+
+---
+
+## 🚀 Ejecutar
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/SANTIAGORF24/ventanillavirtual.git
+cd ventanillavirtual
+npm install
+npm run dev      # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📂 Estructura
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+app/
+├── layout.js · page.js
+└── globals.css
+components/
+├── Home/
+│   ├── DynamicForm.js           motor de formularios por configuración
+│   ├── RegisterPetitionForm.js  radicación de peticiones
+│   ├── ConsultForm.js           consulta de radicado
+│   ├── Tramites.js · Opas.js    catálogos
+│   ├── Solicitudes.js · Denuncias.js · Consultas.js
+│   └── NewBanner.js
+├── NewNav.js · Footer.js
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📌 Estado
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Proyecto entregado. Se conserva como referencia del trabajo realizado para la entidad.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 👤 Autor
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# siteweb_cibertech
+**Santiago Ramírez Forero** — Desarrollador Full Stack
+[LinkedIn](https://www.linkedin.com/in/santiago-ramírez-forero) · [GitHub](https://github.com/SANTIAGORF24)
